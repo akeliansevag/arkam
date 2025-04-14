@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --header-height: 72px;
+  }
+}
+
+@theme {
+  --color-primary-900: #0b202a;
+  --color-primary-700: #113b50;
+  --color-gray-500: #8c9aa9;
+  --color-gray-200: #dde3ea;
+  --color-gray-100: #f5f7fa;
+
+  --font-inter: var(--font-inter);
+  --font-avenir: var(--font-avenir);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+html {
+  @apply font-inter font-normal;
+}
+
+body {
+  @apply text-lg bg-primary-900 text-white;
+}
+
+p {
+  @apply text-gray-500 mb-4;
+}
+
+h1 {
+  @apply font-avenir font-bold mb-2;
+}
+
+h2 {
+  @apply mb-4;
+}
+
+section {
+  @apply lg:py-24 max-lg:py-10;
+}
+
+.button-primary {
+  background: linear-gradient(
+    109.39deg,
+    #113b50 1.39%,
+    #0a767f 52.8%,
+    #05a6a6 90.02%
+  );
+  @apply text-lg rounded-2xl px-6 py-4 mt-2 inline-block;
+}
+
+.button-secondary {
+  @apply text-lg bg-primary-700 rounded-2xl px-6 py-2 inline-block;
+}
+
+.typewriter h1 {
+  @apply overflow-hidden border-r text-center mt-4 text-[4.9vw] mx-auto whitespace-nowrap font-inter font-extralight text-[#00A8A6];
+  border-right-width: 0.1em; /* Tailwind doesn't support this specific width, so use plain CSS */
+  animation: typing 1.8s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-primary-700);
+  }
+}
