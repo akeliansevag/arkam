@@ -31,19 +31,32 @@ body {
 }
 
 p {
-  @apply text-gray-500 mb-4;
+  @apply text-gray-500 mb-4 text-pretty;
 }
 
-h1 {
-  @apply font-avenir font-bold mb-2;
+h1,
+h2 {
+  @apply font-avenir font-bold mb-2 text-balance;
 }
 
 h2 {
   @apply mb-4;
 }
 
+h4 {
+  @apply font-semibold text-xl;
+}
+
+.small-title {
+  @apply font-semibold text-xl;
+}
+
 section {
   @apply lg:py-24 max-lg:py-10;
+}
+
+h2.section-title {
+  @apply text-6xl;
 }
 
 .button-primary {

@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${avenir.variable}`}>
       <title>Arkam</title>
       <body>
-        {
+        {/* {
           loading ? <SplashScreen /> : (
             <>
               <Header />
@@ -49,7 +49,10 @@ export default function RootLayout({ children }) {
               <Footer />
             </>
           )
-        }
+        } */}
+        <Header />
+          {children}
+        <Footer />
       </body>
     </html>
   );
