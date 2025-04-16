@@ -8,7 +8,7 @@ const Partners = () => {
     '/img/mymonty.svg', '/img/montypay.svg', '/img/montyfinance.svg', '/img/montyesim.svg', '/img/montycapital.svg'
   ];
   return (
-    <div className='max-lg:24 lg:py-48 w-full flex items-center justify-center relative'>
+    <div className='max-lg:py-24 lg:py-48 w-full flex items-center justify-center relative'>
         <img src='/img/partners.webp' className='absolute w-full h-full object-cover'/>
         <div className="rotate-180 bottom absolute w-full h-full z-10 bg-[linear-gradient(231.68deg,_rgba(11,32,42,0.68)_43.3%,_rgba(0,168,166,0.68)_90.45%)]"></div>
         <div className='container relative z-20'>
@@ -22,7 +22,7 @@ const Partners = () => {
                 {
                     partners.map((partner,index)=>{
                         return (
-                            <motion.div {...fadeInUp(index/10)} key={index} className='bg-primary-900/50 px-6 w-[calc(20%-20px)] min-w-[100px] aspect-video flex items-center justify-center rounded-2xl'>
+                            <motion.div {...fadeInUp(index/10)} key={index} className='bg-primary-900/50 px-6 max-lg:w-[calc(50%-20px)] lg:w-[calc((100%/3)-20px)] xl:w-[calc(20%-20px)] min-w-[100px] aspect-video flex items-center justify-center rounded-2xl'>
                                 <img src={partner} />
                             </motion.div>
                         )

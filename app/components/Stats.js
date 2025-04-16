@@ -52,7 +52,7 @@ const Stats = () => {
         </motion.div>
       </div>
 
-      <motion.div {...fadeInUp(0.4)} className='number-box light max-w-[425px] lg:translate-x-1/5'>
+      <motion.div {...fadeInUp(0.4)} className='number-box light lg:max-w-[425px] lg:translate-x-1/5'>
         <h5>
           <CountUp
             end={120}

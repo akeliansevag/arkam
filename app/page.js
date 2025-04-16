@@ -74,8 +74,8 @@ const Home = () => {
       <section>
         <div className="container text-center">
           <div className="max-w-[1100px] mx-auto">
-            <motion.h1 {...fadeInUp()} className="text-8xl leading-tight">Build Your Digital Bank like never before</motion.h1>
-            <motion.h2 {...fadeInUp(0.1)} className="text-3xl">Arkam is your trusted partner in financial empowerment</motion.h2>
+            <motion.h1 {...fadeInUp()} className="text-3xl lg:text-5xl xl:text-8xl leading-tight">Build Your Digital Bank like never before</motion.h1>
+            <motion.h2 {...fadeInUp(0.1)} className="text-xl lg:text-2xl xl:text-3xl">Arkam is your trusted partner in financial empowerment</motion.h2>
             <motion.p {...fadeInUp(0.2)}>Whether it’s Core Banking, Digital Wallets and Products, or Consulting, we offer you
             innovative solutions that elevate your business and position you at the center of the fintech map.</motion.p>
             <motion.a {...fadeInUp(0.3)} href="/" className="button-primary">Let's Connect</motion.a>
@@ -83,10 +83,11 @@ const Home = () => {
           <Shapes />        
         </div>
       </section>
+     
       <section>
         <div className="container">
           <motion.h2 {...fadeInUp()} className="text-center section-title">Your Wallet, Your Brand, Your Way,</motion.h2>
-          <div className="grid max-lg:grid-cols-1 lg:grid-cols-4 lg:mt-18 max-lg:mt-10 gap-10">
+          <div className="grid max-lg:grid-cols-1 lg:grid-cols-4 lg:mt-18 max-lg:mt-10 gap-5 lg:gap-10">
             
             {
               products.map((product,index)=>{
@@ -94,7 +95,7 @@ const Home = () => {
                   <div key={index}>
                     <motion.div {...fadeInUp(index/10)} className="text-center">
                       <Link href={product.href}>
-                        <img className="w-full transition-all hover:brightness-120" src={product.image} alt={product.title} />
+                        <img className="max-lg:mx-auto max-lg:max-w-[300px] lg:w-full transition-all hover:brightness-120" src={product.image} alt={product.title} />
                       </Link>
                       
                       <Link href={product.href} className="mt-6 small-title inline-block text-gray-200 hover:text-white">{product.title}</Link>
@@ -112,7 +113,7 @@ const Home = () => {
       <section>
         <div className="container">
           <motion.h2 {...fadeInUp()} className="text-center section-title">The Future of Finance</motion.h2>
-          <div className='grid max-lg:grid-cols-1 lg:grid-cols-3 gap-14 lg:mt-18 max-lg:mt-10'>
+          <div className='grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-5 lg:gap-14 lg:mt-18 max-lg:mt-10'>
             {
               services.map((service,index)=>{
                 return (
@@ -139,10 +140,10 @@ const Home = () => {
             <div className='lg:w-1/2'>
               <Mobiles />
             </div>
-            <div className='lg:w-1/2'>
+            <div className='lg:w-1/2 max-lg:text-center'>
               <motion.h2 {...fadeInUp()} className="section-title !mb-0">ARKAM</motion.h2>
-              <motion.h3 className="font-avenir font-bold text-4xl mb-5" {...fadeInUp(0.1)}>For <span className='text-secondary'>Inclusion</span></motion.h3>
-              <motion.p {...fadeInUp(0.2)}>With a commitment to excellence, our team collaborates closely withclients to understand their vision and objectives,
+              <motion.h3 className="font-avenir font-bold text-xl lg:text-4xl mb-3 lg:mb-5" {...fadeInUp(0.1)}>For <span className='text-secondary'>Inclusion</span></motion.h3>
+              <motion.p {...fadeInUp(0.2)} className="!mb-0">With a commitment to excellence, our team collaborates closely withclients to understand their vision and objectives,
 crafting customized strategies that facilitate a smooth digital transformation.
               </motion.p>
             </div>
@@ -153,10 +154,10 @@ crafting customized strategies that facilitate a smooth digital transformation.
       <section>
             <div className='container'>
                 <div className='flex max-lg:flex-col lg:items-center gap-10'>
-                    <div className='lg:w-1/2 flex flex-col gap-5'>
+                    <div className='lg:w-1/2 max-lg:flex-wrap flex flex-col gap-5 max-lg:text-center'>
                       <Stats />
                     </div>
-                    <div className='lg:w-1/2'>
+                    <div className='lg:w-1/2 max-lg:text-center'>
                       <motion.h2 {...fadeInUp()} className="section-title">Trusted by millions</motion.h2>
                       <motion.p {...fadeInUp(0.2)}>Imperdiet lorem condimentum sit augue. Amet consequat nec congue ut senectus enim mattis sit. Nisi commodo venenatis posuere sit at, venenatis.Gravida nulla facilisis
                       </motion.p>

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className='max-lg:py-10 lg:py-24'>
       <Newsletter />
       <div className='container max-lg:mt-10 lg:mt-24'>
-        <div className='flex justify-between'>
+        <div className='flex max-lg:flex-col max-lg:gap-10 max-lg:text-center justify-between'>
             <motion.div {...fadeInUp(0)} className='lg:w-1/3'>
                 <Link className="mb-4 inline-block" href="/"><img src='/img/logo.svg' alt="Arkam logo"/></Link>
                 <p className='!mb-0'>Arkam provides a comprehensive digital
@@ -43,8 +43,8 @@ const Footer = () => {
                 </ul>
             </motion.div>
         </div>
-        <div className='mt-24'>
-          <motion.p {...fadeInUp(0)} className='text-base'>&copy; 2025 Arkam</motion.p>
+        <div className='max-lg:mt-10 lg:mt-24 max-lg:text-center'>
+          <motion.p {...fadeInUp(0)} className='text-base !mb-0'>&copy; 2025 Arkam</motion.p>
         </div>
       </div>
     </footer>

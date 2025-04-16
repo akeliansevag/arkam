@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  @apply text-lg bg-primary-900 text-white;
+  @apply text-base lg:text-lg bg-primary-900 text-white;
 }
 
 p {
@@ -57,7 +57,7 @@ section {
 }
 
 h2.section-title {
-  @apply text-6xl;
+  @apply text-3xl lg:text-5xl xl:text-6xl;
 }
 
 .button-primary {
@@ -67,7 +67,7 @@ h2.section-title {
     #0a767f 52.8%,
     #05a6a6 90.02%
   );
-  @apply text-lg rounded-2xl px-6 py-3 mt-2 inline-block;
+  @apply text-base lg:text-lg rounded-2xl px-6 py-3 mt-2 inline-block;
 }
 
 .button-secondary {
@@ -119,19 +119,19 @@ h2.section-title {
 }
 
 .number-box > h5 {
-  @apply text-4xl font-semibold;
+  @apply text-3xl lg:text-4xl font-semibold;
 }
 
 .number-box > span {
   @apply text-gray-500 text-base;
 }
 .footer-menu {
-  @apply flex flex-col gap-3;
+  @apply flex flex-col max-lg:gap-1 lg:gap-3;
 }
 .footer-menu a {
   @apply text-gray-500 hover:text-white;
 }
 
 footer h5 {
-  @apply mb-5 text-xl;
+  @apply lg:mb-5 lg:text-xl max-lg:mb-3 max-lg:text-lg;
 }
