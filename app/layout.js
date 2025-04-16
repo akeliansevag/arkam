@@ -47,19 +47,19 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${avenir.variable}`}>
       <title>Arkam</title>
       <body>
-        {/* {
+        {
           loading ? <SplashScreen /> : (
             <>
-              <Header />
-                {children}
+              <MobileMenu handleClick={handleMenuToggle} isMenuOpen={isMenuOpen}/>
+              <Header isMenuOpen={isMenuOpen} handleClick={handleMenuToggle}/>
+                <div className='pt-[var(--header-height)]'>
+                  {children}
+                </div>
               <Footer />
             </>
           )
-        } */}
-        <MobileMenu handleClick={handleMenuToggle} isMenuOpen={isMenuOpen}/>
-        <Header isMenuOpen={isMenuOpen} handleClick={handleMenuToggle}/>
-          {children}
-        <Footer />
+        }
+        
       </body>
     </html>
   );

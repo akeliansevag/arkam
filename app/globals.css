@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  @apply text-base lg:text-lg bg-primary-900 text-white pt-[var(--header-height)];
+  @apply text-base lg:text-lg bg-primary-900 text-white;
 }
 
 p {
