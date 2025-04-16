@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import SplashScreen from './components/SplashScreen';
 import { useEffect, useState } from 'react';
 import './globals.css';
+import MobileMenu from './components/MobileMenu';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,6 +33,11 @@ const avenir = localFont({
 
 export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(prev => !prev);
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3000);
@@ -50,7 +56,8 @@ export default function RootLayout({ children }) {
             </>
           )
         } */}
-        <Header />
+        <MobileMenu handleClick={handleMenuToggle} isMenuOpen={isMenuOpen}/>
+        <Header isMenuOpen={isMenuOpen} handleClick={handleMenuToggle}/>
           {children}
         <Footer />
       </body>

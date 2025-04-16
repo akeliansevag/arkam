@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --header-height: 72px;
-  }
+:root {
+  --header-height: 72px;
 }
 
 @theme {
@@ -28,7 +26,7 @@ html {
 }
 
 body {
-  @apply text-base lg:text-lg bg-primary-900 text-white;
+  @apply text-base lg:text-lg bg-primary-900 text-white pt-[var(--header-height)];
 }
 
 p {
