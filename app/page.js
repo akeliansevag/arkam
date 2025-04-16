@@ -3,11 +3,10 @@ import * as motion from "motion/react-client";
 import { fadeInUp } from "./config/animations";
 import Shapes from "./components/Shapes";
 import Mobiles from './components/Mobiles';
+import Stats from './components/Stats';
+import Partners from './components/Partners';
 
-export const metadata = {
-  title: "Arkam - Build Your Digital Bank like never before",
-  description: "Arkam is your trusted partner in financial empowerment",
-};
+// 
 const Home = () => {
   const products = [
     {
@@ -71,6 +70,7 @@ const Home = () => {
   ];
   return (
     <div>
+      
       <section>
         <div className="container text-center">
           <div className="max-w-[1100px] mx-auto">
@@ -140,8 +140,8 @@ const Home = () => {
               <Mobiles />
             </div>
             <div className='lg:w-1/2'>
-              <motion.h2 {...fadeInUp()} className="section-title">ARKAM</motion.h2>
-              <motion.h3 {...fadeInUp(0.1)}>For Inclusion</motion.h3>
+              <motion.h2 {...fadeInUp()} className="section-title !mb-0">ARKAM</motion.h2>
+              <motion.h3 className="font-avenir font-bold text-4xl mb-5" {...fadeInUp(0.1)}>For <span className='text-secondary'>Inclusion</span></motion.h3>
               <motion.p {...fadeInUp(0.2)}>With a commitment to excellence, our team collaborates closely withclients to understand their vision and objectives,
 crafting customized strategies that facilitate a smooth digital transformation.
               </motion.p>
@@ -149,10 +149,26 @@ crafting customized strategies that facilitate a smooth digital transformation.
           </div>
         </div>
       </section>
+          
+      <section>
+            <div className='container'>
+                <div className='flex max-lg:flex-col lg:items-center gap-10'>
+                    <div className='lg:w-1/2 flex flex-col gap-5'>
+                      <Stats />
+                    </div>
+                    <div className='lg:w-1/2'>
+                      <motion.h2 {...fadeInUp()} className="section-title">Trusted by millions</motion.h2>
+                      <motion.p {...fadeInUp(0.2)}>Imperdiet lorem condimentum sit augue. Amet consequat nec congue ut senectus enim mattis sit. Nisi commodo venenatis posuere sit at, venenatis.Gravida nulla facilisis
+                      </motion.p>
+                      <motion.div {...fadeInUp(0.3)}>
+                        <Link className="button-primary" href="/">Learn More</Link>
+                      </motion.div>
+                    </div>
+                </div>
+            </div>
+      </section>
 
-      
-
-      
+      <Partners />
     </div>
     
   );

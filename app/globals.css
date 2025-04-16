@@ -12,6 +12,7 @@
   --color-gray-500: #8c9aa9;
   --color-gray-200: #dde3ea;
   --color-gray-100: #f5f7fa;
+  --color-secondary: #05a6a6;
 
   --font-inter: var(--font-inter);
   --font-avenir: var(--font-avenir);
@@ -66,7 +67,7 @@ h2.section-title {
     #0a767f 52.8%,
     #05a6a6 90.02%
   );
-  @apply text-lg rounded-2xl px-6 py-4 mt-2 inline-block;
+  @apply text-lg rounded-2xl px-6 py-3 mt-2 inline-block;
 }
 
 .button-secondary {
@@ -98,4 +99,39 @@ h2.section-title {
   50% {
     border-color: var(--color-primary-700);
   }
+}
+
+.number-box {
+  @apply rounded-2xl p-7;
+  background: linear-gradient(
+    124.77deg,
+    rgba(29, 40, 56, 0.5) 0%,
+    rgba(29, 40, 56, 0) 100%
+  );
+}
+
+.number-box.light {
+  background: linear-gradient(
+    124.77deg,
+    #07262b 0%,
+    rgba(29, 40, 56, 0.5) 100%
+  );
+}
+
+.number-box > h5 {
+  @apply text-4xl font-semibold;
+}
+
+.number-box > span {
+  @apply text-gray-500 text-base;
+}
+.footer-menu {
+  @apply flex flex-col gap-3;
+}
+.footer-menu a {
+  @apply text-gray-500 hover:text-white;
+}
+
+footer h5 {
+  @apply mb-5 text-xl;
 }

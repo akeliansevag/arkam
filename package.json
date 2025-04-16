@@ -12,7 +12,9 @@
     "motion": "^12.7.2",
     "next": "15.3.0",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
+    "react-parallax": "^3.5.2",
     "react-parallax-tilt": "^1.7.291"
   },
   "devDependencies": {
