@@ -1,27 +1,27 @@
 export const mainMenu = [
     {
         title: 'Core Banking',
-        href: '/core-banking'
+        href: '/'
     },
     {
         title: 'Digital Wallet',
-        href: '/digital-wallet'
+        href: '/'
     },
     {
         title: 'Digital Products',
-        href: '/digital-products'
+        href: '/'
     },
     {
         title: 'Consultancy',
-        href: '/consultancy'
+        href: '/'
     },
     {
         title: 'Company',
-        href: '/company'
+        href: '/'
     },
     {
         title: 'Media',
-        href: '/media'
+        href: '/'
     },
 
 ];
