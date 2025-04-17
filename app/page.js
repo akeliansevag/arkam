@@ -49,7 +49,7 @@ const Home = () => {
     {
       icon: '/img/data-analytics.svg',
       title: 'Data Analytics',
-      description: 'Empower your business clients to make quicker, smarter decisions withreal-time data and automated workflows.'
+      description: 'Empower your business clients to make quicker, smarter decisions with real-time data and automated workflows.'
     },
     {
       icon: '/img/sustainable-growth.svg',
@@ -64,7 +64,7 @@ const Home = () => {
     {
       icon: '/img/seamless-integration.svg',
       title: 'Seamless Integration',
-      description: 'Empower your business clients to make quicker, smarter decisions withreal-time data and automated workflows.'
+      description: 'Empower your business clients to make quicker, smarter decisions with real-time data and automated workflows.'
     },
     
   ];
@@ -134,22 +134,7 @@ const Home = () => {
         </div>
       </section>
       
-      <section>
-        <div className="container">
-          <div className='flex lg:items-center max-lg:flex-col max-lg:gap-10 lg:gap-24'>
-            <div className='lg:w-1/2'>
-              <Mobiles />
-            </div>
-            <div className='lg:w-1/2 max-lg:text-center'>
-              <motion.h2 {...fadeInUp()} className="section-title !mb-0">ARKAM</motion.h2>
-              <motion.h3 className="font-avenir font-bold text-xl lg:text-4xl mb-3 lg:mb-5" {...fadeInUp(0.1)}>For <span className='text-secondary'>Inclusion</span></motion.h3>
-              <motion.p {...fadeInUp(0.2)} className="!mb-0">With a commitment to excellence, our team collaborates closely withclients to understand their vision and objectives,
-crafting customized strategies that facilitate a smooth digital transformation.
-              </motion.p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Mobiles />
           
       <section>
             <div className='container'>

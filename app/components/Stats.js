@@ -7,7 +7,7 @@ import { fadeInUp } from '../config/animations';
 const Stats = () => {
   return (
     <>
-      <motion.div {...fadeInUp(0)} className='number-box max-w-[425px] lg:translate-x-1/3'>
+      <motion.div {...fadeInUp(0)} className='number-box lg:max-w-[425px] lg:translate-x-1/3'>
         <h5>
           <CountUp
             end={1.8}

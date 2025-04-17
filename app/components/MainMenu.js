@@ -6,7 +6,7 @@ import { mainMenu } from '../data/nav';
 const MainMenu = () => {
   return (
     <div className='max-lg:hidden'>
-        <ul className='flex items-center lg:gap-10 xl:gap-14'>
+        <ul className='flex items-center lg:gap-7 xl:gap-14'>
             {
                 mainMenu.map((item,index) => {
                     return (

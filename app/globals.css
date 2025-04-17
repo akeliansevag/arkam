@@ -75,16 +75,19 @@ h2.section-title {
 .typewriter h1 {
   @apply overflow-hidden border-r text-center mt-4 text-[4.9vw] mx-auto whitespace-nowrap font-inter font-extralight text-[#00A8A6];
   border-right-width: 0.1em; /* Tailwind doesn't support this specific width, so use plain CSS */
-  animation: typing 1.8s steps(40, end), blink-caret 0.75s step-end infinite;
+  opacity: 0;
+  animation: typing 1.8s steps(40, end) 2s forwards,
+    blink-caret 0.75s step-end infinite 2s;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
     width: 100%;
+    opacity: 1;
   }
 }
 

@@ -9,7 +9,7 @@ const Header = ({handleClick,isMenuOpen}) => {
 
   return (
     <motion.header {...fadeInUp()} className='w-full h-[var(--header-height)] fixed top-0 bg-primary-900/70 backdrop-blur-sm z-50'>
-        <div className='max-w-[1740px] py-4 px-4 mx-auto flex items-center h-full justify-between'>
+        <div className='container py-4 flex items-center h-full justify-between'>
             <div>
                 <Link href='/'>
                     <img src='/img/logo.svg' alt='Akram Logo'/>
