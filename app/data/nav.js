@@ -5,7 +5,7 @@ export const mainMenu = [
     },
     {
         title: 'Digital Wallet',
-        href: '/'
+        href: '/digital-wallet'
     },
     {
         title: 'Digital Products',

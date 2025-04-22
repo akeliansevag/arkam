@@ -7,8 +7,7 @@ import { fadeInUp } from '../config/animations';
 const Footer = () => {
   return (
     <footer className='max-lg:py-10 lg:py-24'>
-      <Newsletter />
-      <div className='container max-lg:mt-10 lg:mt-24'>
+      <div className='container'>
         <div className='flex max-lg:flex-col max-lg:gap-10 max-lg:text-center justify-between'>
             <motion.div {...fadeInUp(0)} className='lg:w-1/3'>
                 <Link className="mb-4 inline-block" href="/"><img src='/img/logo.svg' alt="Arkam logo"/></Link>

@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import * as motion from "motion/react-client";
 import { fadeInUp } from "./config/animations";
-import Shapes from "./components/Shapes";
 import Mobiles from './components/Mobiles';
 import Stats from './components/Stats';
 import Partners from './components/Partners';
+import Hero from './components/Hero';
+import IconsTextGrid from './components/IconsTextGrid';
+import Newsletter from './components/Newsletter';
+
 
 // 
 const Home = () => {
@@ -71,19 +74,9 @@ const Home = () => {
   return (
     <div>
       
-      <section>
-        <div className="container text-center">
-          <div className="max-w-[1100px] mx-auto">
-            <motion.h1 {...fadeInUp()} className="text-3xl lg:text-5xl xl:text-8xl leading-tight">Build Your Digital Bank like never before</motion.h1>
-            <motion.h2 {...fadeInUp(0.1)} className="text-xl lg:text-2xl xl:text-3xl">Arkam is your trusted partner in financial empowerment</motion.h2>
-            <motion.p {...fadeInUp(0.2)}>Whether it’s Core Banking, Digital Wallets and Products, or Consulting, we offer you
-            innovative solutions that elevate your business and position you at the center of the fintech map.</motion.p>
-            <motion.a {...fadeInUp(0.3)} href="/" className="button-primary">Let's Connect</motion.a>
-          </div>
-          <Shapes />        
-        </div>
-      </section>
-     
+      
+      <Hero title="Build Your Digital Bank like never before" subtitle="Arkam is your trusted partner in financial empowerment" description="Whether it’s Core Banking, Digital Wallets and Products, or Consulting, we offer you innovative solutions that elevate your business and position you at the center of the fintech map." cta={{link: '/', text:"Let's Connect"}}/>
+      
       <section>
         <div className="container">
           <motion.h2 {...fadeInUp()} className="text-center section-title">Your Wallet, Your Brand, Your Way,</motion.h2>
@@ -110,29 +103,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <div className="container">
-          <motion.h2 {...fadeInUp()} className="text-center section-title">The Future of Finance</motion.h2>
-          <div className='grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-5 lg:gap-14 lg:mt-18 max-lg:mt-10'>
-            {
-              services.map((service,index)=>{
-                return (
-                  <div key={index}> 
-                    <motion.div {...fadeInUp(index/10)} className="text-center">
-                      <div className='flex items-center justify-center mx-auto transition-all hover:brightness-120 w-[70px] h-[70px] bg-[linear-gradient(140deg,_#0C3D48_0%,_rgba(29,40,56,0.5)_100%)] rounded-xl'>
-                        <img src={service.icon} alt={service.title} />
-                      </div>
-                      <h5 className="mt-6 small-title inline-block text-gray-200 hover:text-white">{service.title}</h5>
-                      <p className="mt-3">{service.description}</p>
-                    </motion.div>
-                  </div>
-                )
-                
-              })
-            }
-          </div>
-        </div>
-      </section>
+      <IconsTextGrid title="The Future of Finance" items={services}/>
       
       <Mobiles />
           
@@ -155,6 +126,7 @@ const Home = () => {
       </section>
 
       <Partners />
+      <Newsletter />
     </div>
     
   );

@@ -54,8 +54,12 @@ section {
   @apply lg:py-24 max-lg:py-10;
 }
 
-h2.section-title {
-  @apply text-3xl lg:text-5xl xl:text-6xl;
+.section-title {
+  @apply text-3xl lg:text-5xl xl:text-6xl font-bold;
+}
+
+h3.section-title {
+  @apply mb-3;
 }
 
 .button-primary {

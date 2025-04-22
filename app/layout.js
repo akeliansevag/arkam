@@ -32,7 +32,9 @@ const avenir = localFont({
 
 
 export default function RootLayout({ children }) {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -40,6 +42,7 @@ export default function RootLayout({ children }) {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const timer = setTimeout(() => setLoading(false), 5000);
     return () => clearTimeout(timer);
   }, []);

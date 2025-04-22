@@ -2,11 +2,10 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { motion } from "motion/react";
-import { fadeInUp } from '../config/animations';
-
+import { fadeInUpOnMount } from '../config/animations';
 const Shapes = () => {
   return (
-    <motion.div {...fadeInUp(0.4)} className='relative max-w-[950px] mx-auto w-full lg:mt-24 max-lg:mt-10'>
+    <motion.div {...fadeInUpOnMount(0.4)} className='relative max-w-[950px] mx-auto w-full lg:mt-24 max-lg:mt-10'>
         <div className='relative w-full z-10 xl:left-[10%]'>
             <Tilt gyroscope={true} transitionSpeed={4000} perspective={3000} trackOnWindow={true} reset={false}>
                 <svg className='w-full aspect-[925/499]' viewBox="0 0 925 499" fill="none" xmlns="http://www.w3.org/2000/svg">
