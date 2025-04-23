@@ -5,6 +5,7 @@ import { fadeInUp } from '../config/animations';
 import IconsTextGrid from '../components/IconsTextGrid';
 import IconsTextGridTwo from '../components/IconsTextGridTwo';
 import CtaSection from '../components/CtaSection';
+import LeftRightGrid from '../components/LeftRightGrid';
 
 export const metadata = {
     title: 'Arkam | Digital Wallet',
@@ -94,31 +95,8 @@ const page = () => {
     <>
         <Hero title="Your Brand, Your Wallet, Your Vision" description="The future of payments is digital, and we’re here to help you lead the way. Whether you’re a bank, fintech, telecom, or enterprise, our digital wallet solution allows you to offer a seamless, secure, and fully branded digital wallet experience, without the hassle of building one from the ground up." />
 
-        <section>
-            <div className='container text-center'>
-                <motion.h2 {...fadeInUp()} className='section-title'>Why Choose Our Digital Wallet?</motion.h2>
-                <motion.p className="max-w-[800px] mx-auto" {...fadeInUp(0.2)}>Our white-label solution goes beyond transactions, it’s designed to enhance customer engagement, streamline payments, and drive business growth.</motion.p>
-            </div>
-            <div className='container max-w-[1200px] max-lg:mt-10 lg:mt-24'>
-                <div className='flex flex-col lg:gap-42 max-lg:gap-10'>
-                    {why.map((item,index)=>{
-                        return (
-                            <div className={`flex max-lg:flex-col lg:items-center lg:gap-16 max-lg:gap-10 ${index%2!=0 && 'lg:flex-row-reverse'}`} key={index}>
-                                <motion.div className="lg:w-1/2" {...fadeInUp()}>
-                                    <img src={item.image} alt={item.title} />
-                                </motion.div>
-                                <div className='lg:w-1/2'>
-                                    <motion.h3 {...fadeInUp(0.1)} className='section-title'>{item.title}</motion.h3>
-                                    <motion.p {...fadeInUp(0.3)}>{item.description}</motion.p>
-                                </div>
-                                
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
-        </section>
-        
+        <LeftRightGrid title="Why Choose Our Digital Wallet?" subtitle="Our white-label solution goes beyond transactions, it’s designed to enhance customer engagement, streamline payments, and drive business growth." items={why} />
+
         <IconsTextGrid title="Comprehensive Features" items={features}/>
         <IconsTextGridTwo title="Who Can Benefit?" items={beneficiaries} background="/img/who-can-benefit.webp" />
         <CtaSection title="Launch Your Digital Wallet with Confidence" description="The shift to digital payments is happening! Position your business at the forefront with a solution that is secure, scalable, and future-ready." cta={{link: "/", text: 'Schedule a Demo'}}/>

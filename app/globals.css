@@ -11,7 +11,7 @@
   --color-gray-200: #dde3ea;
   --color-gray-100: #f5f7fa;
   --color-secondary: #05a6a6;
-
+  --color-gold: #f7c948;
   --font-inter: var(--font-inter);
   --font-avenir: var(--font-avenir);
 }
@@ -139,4 +139,49 @@ h3.section-title {
 
 footer h5 {
   @apply lg:mb-5 lg:text-xl max-lg:mb-3 max-lg:text-lg;
+}
+
+.progress-circle {
+  @apply w-40 aspect-square rounded-full;
+  border: 6px solid;
+  border-image-source: linear-gradient(
+    109.39deg,
+    #113b50 1.39%,
+    #0a767f 52.8%,
+    #05a6a6 90.02%
+  );
+  border-image-slice: 1;
+}
+
+.bg-custom-gradient {
+  @apply flex items-center justify-center text-center max-lg:p-10 lg:p-18 rounded-4xl;
+  background: linear-gradient(
+      0deg,
+      rgba(29, 29, 29, 0.05),
+      rgba(29, 29, 29, 0.05)
+    ),
+    linear-gradient(
+      106.42deg,
+      rgba(12, 61, 72, 0.5) -0.63%,
+      rgba(12, 61, 72, 0) 95.32%
+    );
+  border: 1.16px solid;
+
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(79, 168, 189, 0.1) 10.5%,
+    rgba(33, 91, 104, 0.1) 69.57%
+  );
+  backdrop-filter: blur(47.95000076293945px);
+  box-shadow: 0px 8px 12px 0px #ffffff26 inset;
+}
+
+.custom-dots {
+  @apply !flex justify-center mt-10 gap-4;
+}
+.custom-dots div {
+  @apply w-[10px] h-[10px] rounded-full bg-gray-400 hover:bg-white hover:cursor-pointer;
+}
+.custom-dots .slick-active div {
+  @apply bg-white;
 }
