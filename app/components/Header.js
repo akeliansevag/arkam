@@ -8,14 +8,14 @@ import MainMenu from './MainMenu';
 const Header = ({handleClick,isMenuOpen}) => {
 
   return (
-    <motion.header {...fadeInUp()} className='w-full h-[var(--header-height)] fixed top-0 bg-primary-900/70 backdrop-blur-sm z-50'>
-        <div className='container py-4 flex items-center h-full justify-between'>
+    <motion.header {...fadeInUp()} className='w-full h-[var(--header-height)] fixed top-0  z-50'>
+        <div className='container flex items-center h-full justify-between'>
             <div>
                 <Link href='/'>
                     <img src='/img/logo.svg' alt='Akram Logo'/>
                 </Link> 
             </div>
-            <div>
+            <div className='h-full'>
                 <MainMenu />
             </div>
             <div>

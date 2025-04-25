@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { mainMenu } from '../data/nav';
 import  Link  from 'next/link';
 
@@ -12,7 +12,15 @@ const MobileMenu = ({isMenuOpen,handleClick}) => {
                     mainMenu.map((item,index) => {
                         return (
                             <li key={index}>
-                                <Link onClick={handleClick} className='text-base text-gray-200 hover:text-white' href={item.href}>{item.title}</Link>
+                                {
+                                    item.href ? (
+                                        <Link onClick={handleClick} className='text-base text-gray-200 hover:text-white' href={item.href}>{item.title}</Link>
+                                    ) : (
+
+                                        <div onClick={handleClick} className='text-base text-gray-200 hover:text-white' href={item.href}>{item.title}</div>
+                                    )
+                                }
+                               
                             </li>
                         )
                     })
