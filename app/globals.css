@@ -187,5 +187,5 @@ footer h5 {
 }
 
 .mega-menu {
-  @apply absolute p-10 w-full left-0 top-[var(--header-height)] hidden group-hover:block bg-primary-900/70 backdrop-blur-sm;
+  @apply absolute p-10 w-full left-0 top-[var(--header-height)] hidden group-hover:block bg-primary-900;
 }
