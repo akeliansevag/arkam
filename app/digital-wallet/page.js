@@ -15,27 +15,27 @@ export const metadata = {
 const page = () => {
   const why = [
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/customizable-and-scalable.svg',
         title: 'Customizable & Scalable',
         description: 'Tailor the wallet to match your brand identity and scale as you grow.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/enterprise-grade-security.svg',
         title: 'Enterprise-Grade Security',
         description: 'Built with bank-level encryption, fraud protection, and regulatory compliance.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/seamless-transactions.svg',
         title: 'Seamless Transactions',
         description: 'Enable instant peer-to-peer transfers, merchant payments, and more.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/multi-currency.svg',
         title: 'Multi-Currency & Cross-Border Ready',
         description: 'Support for various currencies and international transactions.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/api-driven-integration.svg',
         title: 'API-Driven Integration',
         description: 'Easily connect with your existing banking or fintech ecosystem.'
     }

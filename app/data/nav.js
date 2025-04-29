@@ -45,12 +45,12 @@ export const mainMenu = [
       children: [
         {
             title: 'Card Management',
-            href: '/card-management',
+            href: '/digital-products/card-management-system',
             items: [],
         },
         {
             title: 'Personal Financial Management (PFM)',
-            href: '/personal-financial-management-pfm',
+            href: '/digital-products/personal-financial-management',
             items: [],
         },
         {

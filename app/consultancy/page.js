@@ -17,22 +17,22 @@ export const metadata = {
 const page = () => {
   const why = [
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/proven-success.svg',
         title: 'Proven Success Across the Globe',
         description: 'Guidance on choosing the right jurisdiction and setting up your fintech business efficiently.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/real-world-fintech.svg',
         title: 'Real-World Fintech Expertise',
         description: 'Our team consists of experienced fintech professionals with a track record of building and scaling payment businesses.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/results-driven-approach.svg',
         title: 'Results-Driven Approach',
         description: 'We focus on delivering practical, fully functional solutions that align with your business goals.'
     },
     {
-        image: '/img/item-pattern.svg',
+        image: '/img/get-licensed.svg',
         title: 'Get Licensed & Start Your Payment Business Fast',
         description: 'We provide licensing assistance in multiple regions. Let’s discuss how we can help you secure the right financial license and launch your fintech business with confidence.'
     },

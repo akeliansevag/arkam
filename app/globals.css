@@ -56,7 +56,7 @@ section {
 }
 
 .section-title {
-  @apply text-3xl lg:text-5xl xl:text-6xl font-bold;
+  @apply text-3xl lg:text-5xl xl:text-6xl font-bold max-w-[1000px] mx-auto text-balance;
 }
 
 h3.section-title {
@@ -75,6 +75,10 @@ h3.section-title {
 
 .button-secondary {
   @apply text-lg bg-primary-700 rounded-2xl px-6 py-2 inline-block;
+}
+
+.button-outline {
+  @apply border border-secondary text-secondary text-base lg:text-lg rounded-2xl px-6 py-3 mt-2 inline-block;
 }
 
 .typewriter h1 {
@@ -189,4 +193,48 @@ footer h5 {
 
 .mega-menu {
   @apply absolute p-10 w-full left-0 top-[var(--header-height)] hidden group-hover:block bg-primary-800;
+}
+
+.dark-gradient-icon {
+  @apply bg-[linear-gradient(140deg,_#0C3D48_0%,_rgba(29,40,56,0.5)_100%)];
+}
+
+.light-gradient-icon {
+  background: linear-gradient(
+    142.4deg,
+    #00a8a6 -0.18%,
+    rgba(29, 40, 56, 0.5) 142.88%
+  );
+}
+
+.light-icon {
+  background: linear-gradient(
+    131.13deg,
+    rgba(0, 168, 166, 0.5) 0%,
+    rgba(29, 40, 56, 0) 100%
+  );
+}
+
+.dark-icon {
+  @apply bg-[linear-gradient(135.24deg,_rgba(29,40,56,0.5)_0%,_rgba(29,40,56,0)_100%)];
+}
+
+.bg-gradient-140 {
+  background: linear-gradient(140deg, #0c3d48 0%, rgba(29, 40, 56, 0.5) 100%);
+}
+
+.bg-gradient-one {
+  background: linear-gradient(
+    140.41deg,
+    rgba(29, 40, 56, 0.5) 0%,
+    rgba(29, 40, 56, 0) 100%
+  );
+}
+
+.bg-gradient-two {
+  background: linear-gradient(
+    140.41deg,
+    #07262b 0%,
+    rgba(29, 40, 56, 0.5) 100%
+  );
 }

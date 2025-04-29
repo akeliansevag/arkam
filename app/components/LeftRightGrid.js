@@ -19,9 +19,9 @@ const LeftRightGrid = ({title,subtitle,items}) => {
             <div className='flex flex-col lg:gap-42 max-lg:gap-10 max-lg:text-center'>
                 {items && items.map((item,index)=>{
                     return (
-                        <div className={`flex max-lg:flex-col lg:items-center lg:gap-16 max-lg:gap-10 ${index%2!=0 && 'lg:flex-row-reverse'}`} key={index}>
-                            <motion.div className="lg:w-1/2" {...fadeInUp()}>
-                                <img src={item.image} alt={item.title} />
+                        <div className={`flex max-lg:flex-col lg:justify-between lg:items-center lg:gap-16 max-lg:gap-10 ${index%2!=0 && 'lg:flex-row-reverse'}`} key={index}>
+                            <motion.div className="" {...fadeInUp()}>
+                                <img className='mx-auto' src={item.image} alt={item.title} />
                             </motion.div>
                             <div className='lg:w-1/2'>
                                 <motion.h3 {...fadeInUp(0.1)} className='section-title'>{item.title}</motion.h3>
