@@ -6,7 +6,7 @@ import { fadeInUp } from '../config/animations';
 
 const IconsTextGrid = ({title,items,gradientBg}) => {
   return (
-    <section className={`${gradientBg ? 'bg-gradient-to-b from-[#05A6A6B3] to-[#0D5B6A33] ' : ''}`}>
+    <section className={`${gradientBg ? 'bg-gradient-blue' : ''}`}>
         <div className="container">
           <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
           <div className="flex flex-wrap justify-center gap-y-16 lg:mt-18 max-lg:mt-10">

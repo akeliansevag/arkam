@@ -4,22 +4,29 @@ import { motion } from "motion/react";
 import { fadeInUp } from '../config/animations';
 
 
-const IconsTextGridThree = ({title,items}) => {
+const IconsTextGridThree = ({title,description,items,layout}) => {
   return (
     <section>
         <div className="container">
           <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-center gap-8 lg:mt-18 max-lg:mt-10">
+          {
+            description && (
+              <motion.p className="max-w-[800px] mx-auto text-center">{description}</motion.p>
+            )
+            
+          }
+          <div className="flex flex-wrap justify-center gap-8 lg:mt-18 max-lg:mt-10">
             {items && items.map((item, index) => (
               <motion.div
                 key={index}
                 {...fadeInUp(index / 10)}
-                className="text-center lg:p-10 max-lg:p-5 rounded-2xl bg-[linear-gradient(135.24deg,_rgba(29,40,56,0.5)_0%,_rgba(29,40,56,0)_100%)]"
+                className={`${(layout && layout=='two' ? 'text-left bg-gradient-light' : 'text-center bg-gradient')} lg:p-10 max-lg:p-5 rounded-2xl w-[450px]`}
               >
-                
-                <img className='mx-auto' src={item.icon} alt={item.title} />
-                <h5 className="mt-6 small-title inline-block text-gray-200 hover:text-white">{item.title}</h5>
-                <p className="mt-3">{item.description}</p>
+                <div className={`${(layout && layout=="two") ? 'flex gap-4 items-center' : ''}`}>
+                  <img className={`${(layout && layout=="two") ? '' : 'mx-auto'}`} src={item.icon} alt={item.title} />
+                  <h5 className={`${(layout && layout=="two") ? '' : 'mt-6'}  small-title inline-block text-gray-200 hover:text-white`}>{item.title}</h5>
+                </div>
+                <p className="mt-3 !mb-0">{item.description}</p>
               </motion.div>
             ))}
           </div>

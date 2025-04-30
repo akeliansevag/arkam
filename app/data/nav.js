@@ -55,12 +55,17 @@ export const mainMenu = [
         },
         {
             title: 'Loyalty Management',
-            href: '/loyalty-management',
+            href: '/digital-products/loyalty-management',
             items: [],
         },
         {
+          title: 'Loan Management System',
+          href: '/digital-products/loan-management-system',
+          items: [],
+      },
+        {
             title: 'Payments and Transfers',
-            href: '/payments-and-transfers',
+            href: '/digital-products/payments-and-transfers',
             items: [
                 { title: 'Bill Payment', href: '/payments-and-transfers#bill-payment' },
                 { title: 'Remittances', href: '/payments-and-transfers#remittances' },

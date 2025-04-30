@@ -223,6 +223,14 @@ footer h5 {
   background: linear-gradient(140deg, #0c3d48 0%, rgba(29, 40, 56, 0.5) 100%);
 }
 
+.bg-gradient {
+  @apply bg-[linear-gradient(135.24deg,_rgba(29,40,56,0.5)_0%,_rgba(29,40,56,0)_100%)];
+}
+
+.bg-gradient-light {
+  background: linear-gradient(126.89deg, #103743 0%, rgba(29, 40, 56, 0) 100%);
+}
+
 .bg-gradient-one {
   background: linear-gradient(
     140.41deg,
@@ -237,4 +245,41 @@ footer h5 {
     #07262b 0%,
     rgba(29, 40, 56, 0.5) 100%
   );
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 166, 166, 0.7) -4.98%,
+    rgba(13, 91, 106, 0.2) 100%
+  );
+}
+
+.custom-pagination {
+  @apply !flex max-lg:justify-center lg:flex-col gap-6 max-lg:mt-8;
+}
+
+.vertical-slider-content ul {
+  @apply border border-l-secondary border-r-0 border-t-0 border-b-0 pl-5 py-3 italic;
+}
+
+.vertical-slider-content ul li::before {
+  content: "- ";
+}
+
+.custom-pagination li div {
+  @apply w-[50px] h-[50px] rounded-full flex items-center justify-center border border-secondary text-lg pt-[0.5px];
+}
+
+.custom-pagination li div:hover,
+.custom-pagination li.slick-active div {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 166, 166, 0.7) -4.98%,
+    rgba(13, 91, 106, 0.2) 100%
+  );
+  cursor: pointer;
+}
+.vertical-slider .slick-track {
+  @apply flex items-center;
 }

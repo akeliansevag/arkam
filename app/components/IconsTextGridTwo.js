@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from "motion/react";
 import { fadeInUp } from '../config/animations';
 
-const IconsTextGridTwo = ({title,items,background}) => {
+const IconsTextGridTwo = ({title,description,items,background}) => {
   return (
     <div className='max-lg:py-24 lg:py-48 w-full flex items-center justify-center relative'>
         {
@@ -16,13 +16,18 @@ const IconsTextGridTwo = ({title,items,background}) => {
         }
         
         <div className="container relative z-10">
-        <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-18 max-lg:mt-10">
+            <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
+            {
+                description && (
+                    <motion.div className="text-center" {...fadeInUp(0.1)}>{description}</motion.div>
+                )
+            }
+        <div className="flex flex-wrap justify-center gap-10 lg:mt-18 max-lg:mt-10 h-full">
             {items && items.map((item, index) => (
             <motion.div
                 key={index}
                 {...fadeInUp(index / 10)}
-                className="bg-[#0B202A]/75 p-10 h-full rounded-2xl"
+                className="bg-[#0B202A]/75 p-10 rounded-2xl w-[300px]"
             >   
                 <div>
                     <img src={item.icon} alt={item.title} />
