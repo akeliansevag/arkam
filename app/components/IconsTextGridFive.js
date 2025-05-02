@@ -20,6 +20,7 @@ const IconsTextGridFive = ({title,description,items}) => {
               <motion.div
                 key={index}
                 {...fadeInUp(index / 10)}
+                className="w-[400px]"
               >
                 <motion.div {...fadeInUp(0.1)} className='bg-gradient rounded-2xl'>
                   <img src={item.icon} alt={item.title} />

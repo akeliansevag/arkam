@@ -56,7 +56,7 @@ section {
 }
 
 .section-title {
-  @apply text-3xl lg:text-5xl xl:text-6xl font-bold max-w-[1000px] mx-auto text-balance;
+  @apply text-3xl lg:text-5xl xl:text-6xl font-bold max-w-[1000px] mx-auto text-balance max-lg:text-center;
 }
 
 h3.section-title {

@@ -29,8 +29,8 @@ const IconsTextGridTwo = ({title,description,items,background}) => {
                 {...fadeInUp(index / 10)}
                 className="bg-[#0B202A]/75 p-10 rounded-2xl w-[300px]"
             >   
-                <div>
-                    <img src={item.icon} alt={item.title} />
+                <div className='max-lg:text-center'>
+                    <img className='max-lg:mx-auto' src={item.icon} alt={item.title} />
                     <h5 className="mt-6 small-title inline-block text-gray-200 hover:text-white">{item.title}</h5>
                     <p className="mt-3">{item.description}</p>
                 </div>

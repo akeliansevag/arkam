@@ -93,7 +93,7 @@ const page = () => {
               <div className='flex max-lg:flex-col gap-10 lg:items-center'>
                   <div className='lg:w-1/2'>
                     <motion.h2 {...fadeInUp()} className="section-title">Seamless Integration, Effortless Management</motion.h2>
-                    <motion.p className="!text-white">Our API-driven system connects seamlessly with your banking ecosystem, ensuring a smooth experience for both lenders and borrowers.</motion.p>
+                    <motion.p className="!text-white max-lg:text-center">Our API-driven system connects seamlessly with your banking ecosystem, ensuring a smooth experience for both lenders and borrowers.</motion.p>
                     <div className='mt-10'>
                       <IconsTextBlock items={items_three} background={false} light={true} />
                     </div>

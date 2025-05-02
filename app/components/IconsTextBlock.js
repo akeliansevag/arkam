@@ -9,7 +9,7 @@ const IconsTextBlock = ({title,items,background,light,backgroundClass}) => {
     <div className={`${backgroundClass ? backgroundClass : ''} rounded-2xl ${background && 'p-10'}`}>
       {
         title && (
-          <motion.h3 className="small-title mb-8" {...fadeInUp(0)}>{title}</motion.h3>
+          <motion.h3 className="small-title mb-8 max-lg:text-center" {...fadeInUp(0)}>{title}</motion.h3>
         )
         
       }
@@ -18,7 +18,7 @@ const IconsTextBlock = ({title,items,background,light,backgroundClass}) => {
           {
             items && items.map((item,index)=>{
               return (
-                <div key={index} className='flex items-center gap-3'>
+                <div key={index} className='flex items-center max-lg:flex-col max-lg:text-center gap-3'>
                   <div className={`w-[70px] h-[70px] rounded-2xl ${light ? 'light-icon' : 'bg-gradient-140'}  flex items-center justify-center`}>
                     <img src={item.icon} alt={item.title}/>
                   </div>

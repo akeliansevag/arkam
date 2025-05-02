@@ -75,7 +75,7 @@ export const mainMenu = [
         },
         {
             title: 'Customer Onboarding',
-            href: '/customer-onboarding',
+            href: '/digital-products/customer-onboarding',
             items: [
                 { title: 'AML/KYC', href: '/customer-onboarding#aml-kyc' },
                 { title: 'Video/Liveness Check', href: '/customer-onboarding#video-liveness-check' },
@@ -84,7 +84,7 @@ export const mainMenu = [
         },
         {
             title: 'APIs, Gateways, Integrations',
-            href: '/apis-gateways-integrations',
+            href: '/digital-products/apis-gateways-and-integrations',
             items: [
                 { title: 'eSIM', href: '/apis-gateways-integrations#esim' },
                 { title: 'Payment Gateway', href: '/apis-gateways-integrations#payment-gateway' },

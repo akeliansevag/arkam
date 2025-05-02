@@ -115,7 +115,7 @@ const page = () => {
                   </div>
 
                   <motion.div {...fadeInUp(0.1)}>
-                    <img src='/img/actionable-insights.svg' alt='Actionable Insights' />
+                    <img className='max-lg:mx-auto' src='/img/actionable-insights.svg' alt='Actionable Insights' />
                   </motion.div>
               </div>
             </div>

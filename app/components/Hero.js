@@ -6,18 +6,19 @@ import { fadeInUpOnMount } from '../config/animations';
 import Link from 'next/link';
 
 
-const Hero = ({title,subtitle,description,cta}) => {
+const Hero = ({title,subtitle,description,subsubtitle,cta}) => {
   return (
     <section>
         <div className="container text-center">
             <div className="max-w-[1100px] mx-auto">
                 {title && <motion.h1 {...fadeInUpOnMount()} className="text-3xl lg:text-5xl xl:text-8xl leading-tight">{title}</motion.h1>}
                 {subtitle && <motion.h2 {...fadeInUpOnMount(0.1)} className="text-xl lg:text-2xl xl:text-3xl">{subtitle}</motion.h2>}
-                {description && <motion.p {...fadeInUpOnMount(0.2)}>{description}</motion.p>}
+                {subsubtitle && <motion.h3 {...fadeInUpOnMount(0.2)} className="text-secondary mb-4 text-xl lg:text-2xl xl:text-3xl">{subsubtitle}</motion.h3>}
+                {description && <motion.p {...fadeInUpOnMount(0.3)}>{description}</motion.p>}
 
                 {cta && 
-                  <motion.div {...fadeInUpOnMount(0.3)}>
-                    <Link {...fadeInUpOnMount(0.3)} href={cta.link} className="button-primary">{cta.text}</Link>  
+                  <motion.div {...fadeInUpOnMount(0.4)}>
+                    <Link {...fadeInUpOnMount(0.5)} href={cta.link} className="button-primary">{cta.text}</Link>  
                   </motion.div>
                   
                 }
