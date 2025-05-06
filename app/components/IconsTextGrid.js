@@ -2,13 +2,26 @@
 import React from 'react';
 import { motion } from "motion/react";
 import { fadeInUp } from '../config/animations';
+import Link from 'next/link';
 
 
-const IconsTextGrid = ({title,items,gradientBg}) => {
+const IconsTextGrid = ({title,items,description,gradientBg, cta}) => {
   return (
     <section className={`${gradientBg ? 'bg-gradient-blue' : ''}`}>
         <div className="container">
-          <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
+          <div className='max-w-[800px] mx-auto text-center'>
+            {
+              title && (
+                <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
+              )
+            }
+            {
+              description && (
+                <p className={`${gradientBg ? '!text-white' : ''}`}>{description}</p>
+              )
+            }
+          </div>
+          
           <div className="flex flex-wrap justify-center gap-y-16 lg:mt-18 max-lg:mt-10">
             {items && items.map((item, index) => (
               <motion.div
@@ -24,6 +37,14 @@ const IconsTextGrid = ({title,items,gradientBg}) => {
               </motion.div>
             ))}
           </div>
+          {
+            cta && cta.text && cta.link && (
+              <motion.div {...fadeInUp(0.1)} className='text-center mt-12'>
+                <Link className="button-primary" href={cta.link}>{cta.text}</Link>
+              </motion.div>
+            )
+          }
+          
         </div>
       </section>
   )

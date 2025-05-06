@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from "motion/react";
 import { fadeInUp } from '../config/animations';
+import Link from 'next/link';
 
-
-const IconsTextGridThree = ({title,description,items,layout}) => {
+const IconsTextGridThree = ({title,description,items,layout,cta}) => {
   return (
     <section>
         <div className="container">
@@ -30,6 +30,14 @@ const IconsTextGridThree = ({title,description,items,layout}) => {
               </motion.div>
             ))}
           </div>
+
+          {
+            cta && cta.text && cta.link && (
+              <motion.div {...fadeInUp(0.1)} className='text-center mt-12'>
+                <Link className="button-primary" href={cta.link}>{cta.text}</Link>
+              </motion.div>
+            )
+          }
         </div>
       </section>
   )

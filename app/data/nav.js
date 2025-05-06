@@ -4,12 +4,12 @@ export const mainMenu = [
       children: [
         {
             title: 'Platform',
-            href: '/platform',
+            href: '/core-banking/platform',
             items: [
-                {title: 'Core Banking', href: '/platform#core-banking'},
-                {title: 'Hybrid', href: '/platform#hybrid'},
-                {title: 'Cloud Based', href: '/platform#cloud-based'},
-                {title: 'Onsite', href: '/platform#onsite'}
+                {title: 'Core Banking', href: '/core-banking'},
+                {title: 'Hybrid', href: '/core-banking/platform/ hybrid'},
+                {title: 'Cloud Based', href: '/core-banking/platform/cloud-based'},
+                {title: 'Onsite', href: '/core-banking/platform/on-premises'}
             ]
         },
         {

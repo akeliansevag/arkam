@@ -10,11 +10,11 @@ const Hero = ({title,subtitle,description,subsubtitle,cta}) => {
   return (
     <section>
         <div className="container text-center">
-            <div className="max-w-[1100px] mx-auto">
+            <div className="mx-auto">
                 {title && <motion.h1 {...fadeInUpOnMount()} className="text-3xl lg:text-5xl xl:text-8xl leading-tight">{title}</motion.h1>}
-                {subtitle && <motion.h2 {...fadeInUpOnMount(0.1)} className="text-xl lg:text-2xl xl:text-3xl">{subtitle}</motion.h2>}
+                {subtitle && <motion.h2 {...fadeInUpOnMount(0.1)} className="text-xl lg:text-2xl">{subtitle}</motion.h2>}
                 {subsubtitle && <motion.h3 {...fadeInUpOnMount(0.2)} className="text-secondary mb-4 text-xl lg:text-2xl xl:text-3xl">{subsubtitle}</motion.h3>}
-                {description && <motion.p {...fadeInUpOnMount(0.3)}>{description}</motion.p>}
+                {description && <motion.p dangerouslySetInnerHTML={{ __html: description }} {...fadeInUpOnMount(0.3)} />}
 
                 {cta && 
                   <motion.div {...fadeInUpOnMount(0.4)}>
