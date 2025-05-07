@@ -4,12 +4,15 @@ import { motion } from "motion/react";
 import { fadeInUp } from '../config/animations';
 
 
-const IconsTextGridFour = ({title,items,light}) => {
+const IconsTextGridFour = ({title,items,light,description}) => {
   return (
     <section>
         <div className="container max-w-[1200px]">
           <motion.h2 {...fadeInUp()} className="text-center section-title">{title}</motion.h2>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-center gap-8 lg:mt-18 max-lg:mt-10">
+          {
+            description && <motion.p className="text-center" {...fadeInUp(0.1)}>{description}</motion.p>
+          }
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-center gap-x-8 gap-y-16 lg:mt-18 max-lg:mt-10">
             {items && items.map((item, index) => (
               <motion.div key={index} {...fadeInUp(index / 10)}>
                 <div className={`text-center aspect-video flex items-center justify-center lg:p-10 max-lg:p-5 rounded-2xl ${light ? 'light-icon' : 'dark-icon'}`}>
@@ -17,7 +20,12 @@ const IconsTextGridFour = ({title,items,light}) => {
                 </div>
                 <div className='text-center'>
                   <h5 className="mt-6 small-title inline-block text-gray-200 hover:text-white">{item.title}</h5>
-                  <p className="mt-3">{item.description}</p>
+                  {
+                    item.description && (
+                      <p className="mt-3">{item.description}</p>
+                    )
+                  }
+                  
                 </div>
               </motion.div>              
             ))}

@@ -73,7 +73,7 @@ const HorizontalSlider  = ({items,title,description,icon, bottomDescription}) =>
                 </div>
                 
                 <div className='relative lg:w-1/2 py-12 flex items-center justify-center max-lg:px-5 lg:px-12'>
-                    <div className='slider-bg'></div>
+                    <div className='slider-bg-2'></div>
                     {
                         icon && (
                             <motion.div {...fadeInUp(0.1)}>

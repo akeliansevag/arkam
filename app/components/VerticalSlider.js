@@ -46,7 +46,7 @@ const VerticalSlider = ({items}) => {
                             return (
                                 <div className='vertical-slider-content' key={index}>
                                     
-                                    <h2 className='section-title'>{item.title}</h2>
+                                    <h2 className='section-title lg:!mx-0'>{item.title}</h2>
                                     {
                                         item.subtitle && (
                                             <p>{item.subtitle}</p>

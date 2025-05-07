@@ -7,7 +7,7 @@ export const mainMenu = [
             href: '/core-banking/platform',
             items: [
                 {title: 'Core Banking', href: '/core-banking'},
-                {title: 'Hybrid', href: '/core-banking/platform/ hybrid'},
+                {title: 'Hybrid', href: '/core-banking/platform/hybrid'},
                 {title: 'Cloud Based', href: '/core-banking/platform/cloud-based'},
                 {title: 'Onsite', href: '/core-banking/platform/on-premises'}
             ]
@@ -24,13 +24,13 @@ export const mainMenu = [
         },
         {
             title: 'Technologies',
-            href: '/technologies',
             items: [
-                {title: 'Open Architecture', href: '/technologies#open-architecture'},
-                {title: 'Open Ecosystem', href: '/technologies#open-ecosystem'},
-                {title: 'Security', href: '/technologies#security'},
-                {title: 'Orchestration Integrations', href: '/technologies#orchestration-integrations'},
-                {title: 'Business Process Workflow', href: '/technologies#business-process-workflow'},
+                {title: 'Open Architecture', href: '/core-banking/technologies/open-architecture'},
+                {title: 'Open Ecosystem', href: '/core-banking/technologies/open-ecosystem'},
+                {title: 'Composability', href: '/core-banking/technologies/composability'},
+                {title: 'Security', href: '/core-banking/technologies/security'},
+                {title: 'Orchestration Integrations', href: '/core-banking/technologies/orchestration-integrations'},
+                {title: 'Business Process Workflow', href: '/core-banking/technologies/business-process-workflow'},
             ]
         },
       ],

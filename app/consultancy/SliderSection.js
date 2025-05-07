@@ -31,39 +31,35 @@ const SliderSection = () => {
     };
     const items = [
         {
-            title: 'Legal Services & Consulting',
-            description: 'Expert guidance on regulatory requirements and structuring.',
-            image: '/img/legal-services-and-consulting.webp'
+            title: 'Banking Software',
+            description: 'Secure, compliant, and ready-to-deploy solutions.',
+            image: '/img/banking-software.svg'
         },
         {
             title: 'Legal Services & Consulting',
             description: 'Expert guidance on regulatory requirements and structuring.',
-            image: '/img/legal-services-and-consulting.webp'
+            image: '/img/legal-services.svg'
         },
         {
-            title: 'Legal Services & Consulting',
-            description: 'Expert guidance on regulatory requirements and structuring.',
-            image: '/img/legal-services-and-consulting.webp'
+            title: 'Business Development',
+            description: 'Strategic planning to align with your market goals.',
+            image: '/img/business-development.svg'
         },
         {
-            title: 'Legal Services & Consulting',
-            description: 'Expert guidance on regulatory requirements and structuring.',
-            image: '/img/legal-services-and-consulting.webp'
+            title: 'Regulatory Communication',
+            description: 'Seamless interaction with regulators for approvals.',
+            image: '/img/regulatory-communication-1.svg'
         },
         {
-            title: 'Legal Services & Consulting',
-            description: 'Expert guidance on regulatory requirements and structuring.',
-            image: '/img/legal-services-and-consulting.webp'
+            title: 'Telco Partnerships',
+            description: 'Establish essential connections for fintech operations.',
+            image: '/img/telco-partnerships.svg'
         },
     ];
   return (
     <section>
         <div className='container max-w-[1100px]'>
-            <motion.h2 {...fadeInUp()} className="section-title text-center">Licensing</motion.h2>
-            <motion.p {...fadeInUp(0.1)} className="text-center">
-            MSB, E-Money & Payment Institution Licensing <br />
-            Get fully licensed to operate your <span className='text-white'>digital banking, e-wallet, or payment institution</span> with our all-in-one licensing solution. We handle everything, so you can stay focused on growing your business.
-            </motion.p>
+            <motion.h2 {...fadeInUp()} className="section-title text-center">Comprehensive Licensing Support</motion.h2>
         </div>
         <div className='container lg:px-20 lg:mt-24 max-lg:mt-10'>
             <motion.div {...fadeInUp()} className='relative'>

@@ -14,7 +14,14 @@ const Hero = ({title,subtitle,description,subsubtitle,cta}) => {
                 {title && <motion.h1 {...fadeInUpOnMount()} className="text-3xl lg:text-5xl xl:text-8xl leading-tight">{title}</motion.h1>}
                 {subtitle && <motion.h2 {...fadeInUpOnMount(0.1)} className="text-xl lg:text-2xl">{subtitle}</motion.h2>}
                 {subsubtitle && <motion.h3 {...fadeInUpOnMount(0.2)} className="text-secondary mb-4 text-xl lg:text-2xl xl:text-3xl">{subsubtitle}</motion.h3>}
-                {description && <motion.p dangerouslySetInnerHTML={{ __html: description }} {...fadeInUpOnMount(0.3)} />}
+                {description && 
+                  ( 
+                    <div className='max-w-[1000px] mx-auto'>
+                      <motion.p dangerouslySetInnerHTML={{ __html: description }} {...fadeInUpOnMount(0.3)} />
+                    </div>
+                    
+                  )
+                }
 
                 {cta && 
                   <motion.div {...fadeInUpOnMount(0.4)}>

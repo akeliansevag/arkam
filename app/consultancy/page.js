@@ -121,7 +121,44 @@ const page = () => {
 
         <IconsTextGridThree title="Our Services" items={services}/>
         <LeftRightGrid title="Why Choose Us?" items={why} />
+        <section className='bg-gray'>
+            <div className='container'>
+                <div className='flex gap-8 max-lg:flex-col items-center justify-between'>
+                    <div className='lg:w-1/2'>
+                        <motion.img {...fadeInUp(0)} className='mx-auto' src='/img/licensing.svg' alt="licensing" />
+                    </div>
+                    <div className='lg:w-1/2'>
+                        <motion.h2 {...fadeInUp(0.1)} className='section-title'>Licensing</motion.h2>
+                        <motion.h4 {...fadeInUp(0.2)}>MSB, E-Money & Payment Institution Licensing</motion.h4>
+                        <motion.blockquote {...fadeInUp(0.3)}>Get fully licensed to operate your digital banking, e-wallet, or payment institution with our all-in-one licensing solution. We handle everything, so you can stay focused on growing your business.</motion.blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
         <SliderSection />
+        <section className='bg-gray'>
+            <div className='container'>
+                <div className='flex gap-8 max-lg:flex-col items-center justify-between'>
+                    <div className='lg:w-2/3'>
+                        <motion.h2 {...fadeInUp(0.1)} className='section-title'>What You Need to Obtain a License</motion.h2>
+                        <motion.blockquote {...fadeInUp(0.2)}>
+                            <ul>
+                                <li><strong>Local Presence & Team:</strong> 2-10 identified local employees, depending on jurisdiction.</li>
+                                <li><strong>Transparent Source of Capital:</strong> Sufficient funds to cover first-year losses.</li>
+                                <li><strong>Business Plan & Internal Policies:</strong> Hundreds of pages of structured documentation.</li>
+                                <li><strong>Core Banking Software:</strong> Secure, compliant, and fully documented.</li>
+                                <li><strong>Sufficient Budget:</strong> To cover personnel, legal fees, and share capital.</li>
+                                <li><strong>9-18 Months of Processing Time:</strong> The real timeframe to prepare, submit, and secure licensing.</li>
+                            </ul>
+                        </motion.blockquote>
+                    </div>
+                    <div className='lg:w-1/3'>
+                        <motion.img {...fadeInUp(0)} className='mx-auto' src='/img/license.svg' alt="licensing" />
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
         <div className='flex items-center justify-center bg-gradient-to-b from-[#05A6A6B3] to-[#0D5B6A33] max-lg:py-10 lg:pt-24 lg:pb-35'>
             <div className='container'>
                 <div className='flex w-full max-lg:gap-10 lg:items-end max-lg:flex-col'>
