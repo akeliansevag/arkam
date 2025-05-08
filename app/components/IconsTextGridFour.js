@@ -12,9 +12,9 @@ const IconsTextGridFour = ({title,items,light,description}) => {
           {
             description && <motion.p className="text-center" {...fadeInUp(0.1)}>{description}</motion.p>
           }
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-center gap-x-8 gap-y-16 lg:mt-18 max-lg:mt-10">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-16 lg:mt-18 max-lg:mt-10">
             {items && items.map((item, index) => (
-              <motion.div key={index} {...fadeInUp(index / 10)}>
+              <motion.div className="w-[300px]" key={index} {...fadeInUp(index / 10)}>
                 <div className={`text-center aspect-video flex items-center justify-center lg:p-10 max-lg:p-5 rounded-2xl ${light ? 'light-icon' : 'dark-icon'}`}>
                   <img className='mx-auto' src={item.icon} alt={item.title} />
                 </div>
