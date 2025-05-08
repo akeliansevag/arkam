@@ -27,6 +27,11 @@ const IconsTextGridThree = ({title,description,items,layout,cta}) => {
                   <h5 className={`${(layout && layout=="two") ? '' : 'mt-6'}  small-title inline-block text-gray-200 hover:text-white`}>{item.title}</h5>
                 </div>
                 <p className="mt-3 !mb-0 max-lg:text-center">{item.description}</p>
+                {
+                  item.cta && (
+                    <Link href={item.cta.link && item.cta.link} className="button-primary !mt-6">{item.cta.text && item.cta.text}</Link>
+                  )
+                }
               </motion.div>
             ))}
           </div>

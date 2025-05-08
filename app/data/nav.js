@@ -14,12 +14,12 @@ export const mainMenu = [
         },
         {
             title: 'Solution',
-            href: '/solution',
+            href: '/core-banking/solution',
             items: [
-                {title: 'Retail Banking', href: '/solution#retail-banking'},
-                {title: 'Analytics & Report', href: '/solution#analytics-and-report'},
-                {title: 'Tariffs & Fees', href: '/solution#tariffs-and-fees'},
-                {title: 'Corporate Banking', href: '/solution#corporate-banking'}
+                {title: 'Retail Banking', href: '/core-banking/solution/retail-banking'},
+                {title: 'Analytics & Reports', href: '/core-banking/solution/analytics-and-reports'},
+                {title: 'Tariffs & Fees', href: '/core-banking/solution/tariffs-and-fees'},
+                {title: 'Corporate Banking', href: '/core-banking/solution/corporate-banking'}
             ]
         },
         {

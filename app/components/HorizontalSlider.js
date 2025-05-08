@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const HorizontalSlider  = ({items,title,description,icon, bottomDescription}) => {
+const HorizontalSlider  = ({darkBg,items,title,description,icon, bottomDescription}) => {
     let sliderRef = useRef(null);
     
     var settings = {
@@ -28,7 +28,7 @@ const HorizontalSlider  = ({items,title,description,icon, bottomDescription}) =>
     };
     
   return (
-    <section className='bg-gradient-blue'>
+    <section className={`${(darkBg && darkBg) ? 'bg-primary-800' : 'bg-gradient-blue'}`}>
         <div className='container'>
             <div className='text-center max-w-[800px] mx-auto mb-10'>
                 <h2 className='section-title'>{title}</h2>

@@ -11,7 +11,12 @@ const CtaSection = ({title,description, cta, cta2}) => {
         <div className='overflow-hidden flex flex-col gap-3 bg-[linear-gradient(112.62deg,_rgba(29,40,56,0.5)_0%,_rgba(29,40,56,0)_100%)] text-center lg:py-14 lg:px-24 max-lg:p-8 rounded-2xl relative'>
             <div className='absolute top-0 bg-[#0C3D48] opacity-60 blur-xl w-full z-10 h-10 '></div>
               <motion.h2 {...fadeInUp()} className='section-title'>{title}</motion.h2>
-              <motion.p {...fadeInUp(0.1)}>{description}</motion.p>
+              {
+                description && (
+                  <motion.p dangerouslySetInnerHTML={{ __html: description }} {...fadeInUp(0.1)} />
+                )
+              }
+              
               <div className='flex max-lg:flex-col lg:items-center lg:justify-center lg:gap-3 max-lg:gap-2'>
                 {
                     cta && (

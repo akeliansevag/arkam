@@ -260,7 +260,7 @@ footer h5 {
 }
 
 .vertical-slider-content ul {
-  @apply lg:border lg:border-l-secondary lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:py-3 italic;
+  @apply lg:border lg:border-l-secondary lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:py-3 italic my-5;
 }
 
 .vertical-slider-content ul li::before {
