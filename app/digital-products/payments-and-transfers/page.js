@@ -109,12 +109,15 @@ const page = () => {
     <div>
       <Hero title="Payments and Transfers" description="Give your customers the freedom to manage their payments and transfers effortlessly. Whether they’re paying bills, sending money, or making purchases, our seamless solutions ensure convenience, security, and speed."/>
 
-      <IconsTextGridThree title="Bill Payments" description="Simplify Everyday ExpensesMake paying bills quick and stress-free with smart automation and digital convenience." items={items_one}/>
+      <div id="bill-payments">
+        <IconsTextGridThree title="Bill Payments" description="Simplify Everyday ExpensesMake paying bills quick and stress-free with smart automation and digital convenience." items={items_one}/>
+      </div>
+      
 
       <IconsTextGridTwo description="Enable instant peer-to-peer and cross-border transfers." title="Fast & Reliable Money Transfers" items={items_two} background="/img/fast-and-reliable-money-transfers.webp" />
 
 
-      <section>
+      <section id="remittances">
             <div className='container'>
               <div className='flex max-lg:flex-col gap-10 lg:items-center'>
                   <div className='lg:w-1/2'>
@@ -132,8 +135,11 @@ const page = () => {
             </div>
       </section>
 
-      <IconsTextGridFive title="Paperless E-Billing Solutions" description="Reduce operational costs and enhance efficiency" items={items_four}/>
-      <section>
+      <div id="pos">
+        <IconsTextGridFive title="Paperless E-Billing Solutions" description="Reduce operational costs and enhance efficiency" items={items_four}/>
+      </div>
+      
+      <section id="online-payments-and-reservation">
         <div className='container flex max-lg:flex-col lg:items-center'>
           <div className='lg:w-2/3'>
             <VerticalSlider items={slider_items}/>

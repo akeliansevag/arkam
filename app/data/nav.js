@@ -67,10 +67,10 @@ export const mainMenu = [
             title: 'Payments and Transfers',
             href: '/digital-products/payments-and-transfers',
             items: [
-                { title: 'Bill Payment', href: '/payments-and-transfers#bill-payment' },
-                { title: 'Remittances', href: '/payments-and-transfers#remittances' },
-                { title: 'POS', href: '/payments-and-transfers#pos' },
-                { title: 'Online Payments and Reservation', href: '/payments-and-transfers#online-payments-and-reservation' },
+                { title: 'Bill Payments', href: '/digital-products/payments-and-transfers#bill-payments' },
+                { title: 'Remittances', href: '/digital-products/payments-and-transfers#remittances' },
+                { title: 'POS', href: '/digital-products/payments-and-transfers#pos' },
+                { title: 'Online Payments and Reservation', href: '/digital-products/payments-and-transfers#online-payments-and-reservation' },
             ],
         },
         {
@@ -103,14 +103,14 @@ export const mainMenu = [
         { title: 'About Arkam', href: '/about-arkam' },
         { title: 'Leadership Team', href: '/leadership-team' },
         { title: 'Careers', href: '/careers' },
-        { title: 'Success Stories', href: '/success-stories' },
+        // { title: 'Success Stories', href: '/success-stories' },
         { title: 'Partner With Us', href: '/partner-with-us' },
         { title: 'Contact Us', href: '/contact-us' },
       ],
     },
-    {
-      title: 'Media',
-      href: '/media',
-      children: [],
-    },
+    // {
+    //   title: 'Media',
+    //   href: '/media',
+    //   children: [],
+    // },
   ];

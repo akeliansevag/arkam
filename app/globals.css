@@ -204,7 +204,7 @@ footer h5 {
     142.4deg,
     #00a8a6 -0.18%,
     rgba(29, 40, 56, 0.5) 142.88%
-  );
+  ) !important;
 }
 
 .light-icon {
@@ -356,4 +356,9 @@ blockquote {
 
 blockquote ul {
   @apply list-disc pl-7 max-lg:text-left;
+}
+
+.form-container {
+  @apply max-lg:p-5 lg:p-10 rounded-2xl max-w-[1100px] mx-auto mt-10;
+  background: linear-gradient(126.89deg, #103743 0%, rgba(29, 40, 56, 0) 100%);
 }

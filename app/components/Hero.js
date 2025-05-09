@@ -6,7 +6,7 @@ import { fadeInUpOnMount } from '../config/animations';
 import Link from 'next/link';
 
 
-const Hero = ({title,subtitle,description,subsubtitle,cta}) => {
+const Hero = ({title,subtitle,description,subsubtitle,cta,hideShape}) => {
   return (
     <section>
         <div className="container text-center">
@@ -30,7 +30,12 @@ const Hero = ({title,subtitle,description,subsubtitle,cta}) => {
                   
                 }
             </div>
-            <Shapes />        
+            {
+              !hideShape && (
+                <Shapes />   
+              )
+            }
+                 
         </div>
     </section>
   )

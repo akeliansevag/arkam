@@ -3,7 +3,7 @@ import Hero from '@/app/components/Hero';
 import * as motion from "motion/react-client";
 import { fadeInUp } from '@/app/config/animations';
 import IconsTextGridThree from '@/app/components/IconsTextGridThree';
-import CtaSection from '@/app/components/CtaSection';
+import CtaContact from '@/app/components/CtaContact';
 
 export const metadata = {
     title: 'Arkam | Solution',
@@ -56,7 +56,7 @@ const page = () => {
         <Hero title="Solution" />
 
         <IconsTextGridThree title="Solution" items={items} />
-        <CtaSection title="Contact Us" description="Phone: +961 71 871 871</div> <br /> Address: Gefinor Center - Bloc E - Level LG" /> 
+        <CtaContact title="Contact Us" description="Phone: +961 71 871 871</div> <br /> Address: Gefinor Center - Bloc E - Level LG" /> 
     </>
   )
 }
