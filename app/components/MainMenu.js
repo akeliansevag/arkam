@@ -11,6 +11,7 @@ const MainMenu = ({handleMegaMenuOpen}) => {
   useEffect(() => {
     // Close mega menu on route change
     setHoveredIndex(null);
+    handleMegaMenuOpen(false);
   }, [pathname]);
 
   return (

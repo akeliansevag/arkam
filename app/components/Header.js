@@ -9,8 +9,8 @@ const Header = ({handleClick,isMenuOpen}) => {
 
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
-  const handleMegaMenuOpen = () => {
-    setIsMegaMenuOpen(prev => !prev);
+  const handleMegaMenuOpen = (toggle) => {
+    setIsMegaMenuOpen(toggle);
   };
 
   return (
