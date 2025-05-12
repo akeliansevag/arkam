@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { mainMenu } from '../data/nav';
 import { usePathname } from 'next/navigation';
 
-const MainMenu = () => {
+const MainMenu = ({handleMegaMenuOpen}) => {
   const pathname = usePathname();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -24,8 +24,21 @@ const MainMenu = () => {
             <li
               className="group h-full flex flex-col justify-center"
               key={index}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              onMouseEnter={() => {
+                setHoveredIndex(index);
+                if(item.children && item.children.length > 0){
+                    handleMegaMenuOpen(true);
+                }
+                
+              }}
+              onMouseLeave={() => {
+                setHoveredIndex(null);
+
+                if(item.children && item.children.length > 0){
+                  handleMegaMenuOpen(false);
+                }
+                
+              }}
             >
               {item.href ? (
                 <Link

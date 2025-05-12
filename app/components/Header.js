@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from "motion/react";
 import Link from 'next/link';
 import { fadeInUp } from '../config/animations';
@@ -7,8 +7,14 @@ import MainMenu from './MainMenu';
 
 const Header = ({handleClick,isMenuOpen}) => {
 
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+
+  const handleMegaMenuOpen = () => {
+    setIsMegaMenuOpen(prev => !prev);
+  };
+
   return (
-    <motion.header {...fadeInUp()} className='w-full h-[var(--header-height)] fixed top-0  z-50 bg-primary-900/70 backdrop-blur-sm'>
+    <motion.header {...fadeInUp()} className={`w-full h-[var(--header-height)] fixed top-0  z-50  ${isMegaMenuOpen ? 'bg-primary-800' : 'bg-primary-900/70 backdrop-blur-sm'}`}>
         <div className='container flex items-center h-full justify-between'>
             <div>
                 <Link href='/'>
@@ -16,7 +22,7 @@ const Header = ({handleClick,isMenuOpen}) => {
                 </Link> 
             </div>
             <div className='h-full'>
-                <MainMenu />
+                <MainMenu handleMegaMenuOpen={handleMegaMenuOpen}/>
             </div>
             <div>
                 <Link href="/" className='button-secondary max-lg:!hidden'>Get Started</Link>
