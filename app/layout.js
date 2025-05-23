@@ -34,7 +34,7 @@ const avenir = localFont({
 export default function RootLayout({ children }) {
   // const [loading, setLoading] = useState(true);
   const [loading, setLoading] = useState(true);
-  
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -53,16 +53,16 @@ export default function RootLayout({ children }) {
         {
           loading ? <SplashScreen /> : (
             <>
-              <MobileMenu handleClick={handleMenuToggle} isMenuOpen={isMenuOpen}/>
-              <Header isMenuOpen={isMenuOpen} handleClick={handleMenuToggle}/>
-                <div className='pt-[var(--header-height)]'>
-                  {children}
-                </div>
+              <MobileMenu handleClick={handleMenuToggle} isMenuOpen={isMenuOpen} />
+              <Header isMenuOpen={isMenuOpen} handleClick={handleMenuToggle} />
+              <div className='pt-[var(--header-height)]'>
+                {children}
+              </div>
               <Footer />
             </>
           )
         }
-        
+
       </body>
     </html>
   );
