@@ -25,6 +25,6 @@ jobs:
           ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             cd ~/arkam-staging/frontend
             git pull origin staging
-            docker compose -f docker-compose.staging.yml up -d --build
+            docker compose -f docker-compose.yml up -d --build
             docker image prune -f
           EOF
