@@ -33,7 +33,7 @@ const avenir = localFont({
 
 export default function RootLayout({ children }) {
   // const [loading, setLoading] = useState(true);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
