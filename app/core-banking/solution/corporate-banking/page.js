@@ -7,7 +7,7 @@ import IconsTextGrid from '@/app/components/IconsTextGrid';
 
 export const metadata = {
     title: 'Solution | Corporate Banking',
-    description: 'Transform your business by embracing a digital strategy with Monty Tech’s Corporate Banking Solution. Enhance efficiency, profitability, and resilience with our core-agnostic, cloud-native platform that seamlessly integrates all aspects of corporate banking.',
+    description: 'Transform your business by embracing a digital strategy with Arkam\'s Corporate Banking Solution. Enhance efficiency, profitability, and resilience with our core-agnostic, cloud-native platform that seamlessly integrates all aspects of corporate banking.',
 }
 
 const page = () => {
