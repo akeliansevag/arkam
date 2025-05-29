@@ -67,7 +67,7 @@ const page = () => {
 
   return (
     <>
-        <Hero title="Corporate Banking" description="Transform your business by embracing a digital strategy with Monty Tech’s Corporate Banking Solution. Enhance efficiency, profitability, and resilience with our core-agnostic, cloud-native platform that seamlessly integrates all aspects of corporate banking."/>
+        <Hero title="Corporate Banking" description="Transform your business by embracing a digital strategy with Arkam's Corporate Banking Solution. Enhance efficiency, profitability, and resilience with our core-agnostic, cloud-native platform that seamlessly integrates all aspects of corporate banking."/>
 
         <section className='bg-gray'>
             <div className='container'>
