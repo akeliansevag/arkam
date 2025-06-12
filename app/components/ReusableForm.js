@@ -170,7 +170,7 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
       </motion.button>
 
       {message && (
-        <p className="mt-4 text-[#DDE3EA] text-center">{message}</p>
+        <p className="mt-4 text-[#DDE3EA]">{message}</p>
       )}
     </form>
   );
