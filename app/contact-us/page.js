@@ -24,7 +24,7 @@ const page = () => {
         <div className='container'>
             <div className='form-container'>
             <ReusableForm
-                apiUrl="https://example.com/wp-json/contact-form-7/v1/contact-forms/1234/feedback"
+                apiUrl="https://api.arkam.com/wp-json/contact-form-7/v1/contact-forms/9/feedback"
                 fields={fields}
                 recaptchaSiteKey="6LeF610rAAAAABDIa9IQ5QqeG5GYRZaUXAINadqZ"
             />

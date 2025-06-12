@@ -78,11 +78,18 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
         return;
       }
 
+      const formData = new FormData();
+      Object.entries(formValues).forEach(([key, val]) => {
+        formData.append(key, val);
+      });
+      // CF7 requires these hidden fields
+      formData.append('_wpcf7_unit_tag', 'rte');
+
       // 2) Submit form data
       const response = await fetch(apiUrl, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formValues),
+        headers: { 'Accept': 'application/json' },
+        body: formData,
       });
       const data = await response.json();
       if (data.status === 'mail_sent') {
