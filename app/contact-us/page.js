@@ -26,6 +26,7 @@ const page = () => {
             <ReusableForm
                 apiUrl="https://example.com/wp-json/contact-form-7/v1/contact-forms/1234/feedback"
                 fields={fields}
+                recaptchaSiteKey="6LeF610rAAAAABDIa9IQ5QqeG5GYRZaUXAINadqZ"
             />
             </div>
         </div>
