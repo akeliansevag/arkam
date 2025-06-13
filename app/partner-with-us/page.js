@@ -22,9 +22,11 @@ const page = () => {
             <div className='container'>
                 <motion.h2 className="text-center text-3xl lg:text-5xl xl:text-8xl leading-tight" {...fadeInUpOnMount()}>Partner With Us</motion.h2>
                 <div className='form-container'>
+              
                 <ReusableForm
-                    apiUrl="https://example.com/wp-json/contact-form-7/v1/contact-forms/1234/feedback"
+                    apiUrl="https://api.arkam.com/wp-json/contact-form-7/v1/contact-forms/10/feedback"
                     fields={fields}
+                    recaptchaSiteKey="6LeF610rAAAAABDIa9IQ5QqeG5GYRZaUXAINadqZ"
                 />
                 </div>
             </div>
