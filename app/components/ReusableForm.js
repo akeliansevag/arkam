@@ -25,12 +25,29 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
       if (!value) {
         newErrors[field.name] = `${field.label} is required.`;
       }
-      if (
-        field.name === 'email' &&
-        value &&
-        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
-      ) {
-        newErrors.email = 'Invalid email address.';
+      if (field.name === 'email' && value) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const publicDomains = [
+          'gmail.com',
+          'yahoo.com',
+          'hotmail.com',
+          'outlook.com',
+          'icloud.com',
+          'aol.com',
+          'live.com',
+          'msn.com',
+          'protonmail.com',
+          'gmx.com',
+          'zoho.com',
+        ];
+
+        const emailDomain = value.split('@')[1]?.toLowerCase();
+
+        if (!emailPattern.test(value)) {
+          newErrors.email = 'Invalid email address.';
+        } else if (publicDomains.includes(emailDomain)) {
+          newErrors.email = 'Please use your company email address.';
+        }
       }
       if (
         field.name === 'mobile' &&
