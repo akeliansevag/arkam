@@ -18,10 +18,10 @@ const Footer = () => {
             <motion.div {...fadeInUp(0.2)}>
                 <h5>Quick Links</h5>
                 <ul className='footer-menu'>
-                  <li><Link href="/">Core banking</Link></li>
-                  <li><Link href="/">Digital Wallet</Link></li>
-                  <li><Link href="/">Digital Product</Link></li>
-                  <li><Link href="/">Consultancy</Link></li>
+                  <li><Link href="/core-banking">Core banking</Link></li>
+                  <li><Link href="/digital-wallet">Digital Wallet</Link></li>
+                  <li><Link href="/digital-products/payments-and-transfers">Payments & Transfers</Link></li>
+                  <li><Link href="/consultancy">Consultancy</Link></li>
                 </ul>
             </motion.div>
             <motion.div {...fadeInUp(0.3)}>
@@ -36,9 +36,9 @@ const Footer = () => {
             <motion.div {...fadeInUp(0.4)}>
                 <h5>Arkam</h5>
                 <ul className='footer-menu'>
-                  <li><Link href="/">Company</Link></li>
-                  <li><Link href="/">Media</Link></li>
-                  <li><Link href="/">Contact Us</Link></li>
+                  <li><Link href="/about-arkam">About us</Link></li>
+                  <li><Link href="/leadership-team">Leadership Team</Link></li>
+                  <li><Link href="/contact-us">Contact Us</Link></li>
                 </ul>
             </motion.div>
         </div>

@@ -115,10 +115,10 @@ const Home = () => {
                     </div>
                     <div className='lg:w-1/2 max-lg:text-center'>
                       <motion.h2 {...fadeInUp()} className="section-title">Trusted by millions</motion.h2>
-                      <motion.p {...fadeInUp(0.2)}>Imperdiet lorem condimentum sit augue. Amet consequat nec congue ut senectus enim mattis sit. Nisi commodo venenatis posuere sit at, venenatis.Gravida nulla facilisis
-                      </motion.p>
+                      {/* <motion.p {...fadeInUp(0.2)}>Imperdiet lorem condimentum sit augue. Amet consequat nec congue ut senectus enim mattis sit. Nisi commodo venenatis posuere sit at, venenatis.Gravida nulla facilisis
+                      </motion.p> */}
                       <motion.div {...fadeInUp(0.3)}>
-                        <Link className="button-primary" href="/">Learn More</Link>
+                        <Link className="button-primary" href="/contact-us">Learn More</Link>
                       </motion.div>
                     </div>
                 </div>

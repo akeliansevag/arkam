@@ -4,6 +4,7 @@ import { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { motion } from "motion/react";
 import { fadeInUpOnMount } from '../config/animations';
+import { redirect } from 'next/navigation';
 
 export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
   const [formValues, setFormValues] = useState(
@@ -46,7 +47,7 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
         if (!emailPattern.test(value)) {
           newErrors.email = 'Invalid email address.';
         } else if (publicDomains.includes(emailDomain)) {
-          newErrors.email = 'Please use your company email address.';
+          newErrors.email = 'Company Email Required. Please use your official company email address to proceed. Personal email addresses are not accepted.';
         }
       }
       if (
@@ -110,6 +111,7 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
       });
       const data = await response.json();
       if (data.status === 'mail_sent') {
+        redirect('/contact-us');
         setMessage(data.message || 'Message sent successfully.');
         setFormValues(
           Object.fromEntries(fields.map((f) => [f.name, '']))
