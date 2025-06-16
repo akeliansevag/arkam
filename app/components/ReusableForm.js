@@ -111,7 +111,7 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
       });
       const data = await response.json();
       if (data.status === 'mail_sent') {
-        redirect('/contact-us');
+        redirect('/thank-you');
         setMessage(data.message || 'Message sent successfully.');
         setFormValues(
           Object.fromEntries(fields.map((f) => [f.name, '']))
