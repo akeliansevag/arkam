@@ -4,9 +4,12 @@ import { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { motion } from "motion/react";
 import { fadeInUpOnMount } from '../config/animations';
-import { redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
+
+  const router = useRouter();
+
   const [formValues, setFormValues] = useState(
     Object.fromEntries(fields.map((field) => [field.name, '']))
   );
@@ -111,7 +114,8 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
       });
       const data = await response.json();
       if (data.status === 'mail_sent') {
-        redirect('/thank-you');
+        router.push('/thank-you');
+        return;
         setMessage(data.message || 'Message sent successfully.');
         setFormValues(
           Object.fromEntries(fields.map((f) => [f.name, '']))
