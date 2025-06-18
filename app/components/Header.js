@@ -25,7 +25,7 @@ const Header = ({ handleClick, isMenuOpen }) => {
                     <MainMenu handleMegaMenuOpen={handleMegaMenuOpen} />
                 </div>
                 <div>
-                    <Link href="/contact-us" className='button-secondary max-lg:!hidden'>Get Started</Link>
+                    <Link href="/partner-with-us" className='button-secondary max-lg:!hidden'>Get Started</Link>
                     <div
                         onClick={handleClick}
                         id="burger-menu"
