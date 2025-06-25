@@ -14,7 +14,7 @@ const Partners = () => {
         <div className='container relative z-20'>
             <div className='max-w-[940px] mx-auto text-center'>
                 <motion.h2 {...fadeInUp()} className='section-title'>Connect with Our Partners and Collaborators</motion.h2>
-                <motion.p {...fadeInUp(0.2)}className='!text-gray-300 max-w-[700px] mx-auto'>Tincidunt sed amet ullamcorper diam. Diam proin magnis semper egestas in faucibus tristique augue. Nec tristique hac.</motion.p>
+                {/* <motion.p {...fadeInUp(0.2)}className='!text-gray-300 max-w-[700px] mx-auto'>Tincidunt sed amet ullamcorper diam. Diam proin magnis semper egestas in faucibus tristique augue. Nec tristique hac.</motion.p> */}
                 
             </div>
 
