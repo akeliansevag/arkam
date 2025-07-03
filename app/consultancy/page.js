@@ -186,7 +186,7 @@ const page = () => {
         </div>
         <ProgressCirclesSection title="What You Need to Obtain a License" items={license} />
         <IconsTextGridFour title="Why Work with Us?" items={why_work} />
-        <CtaSection title="Start Your Fintech Journey Today." description="Let’s fast-track your fintech licensing journey." cta={{link: '/', text: 'Get in Touch Today!'}}/>
+        <CtaSection title="Start Your Fintech Journey Today." description="Let’s fast-track your fintech licensing journey." cta={{link: '/contact-us', text: 'Get in Touch Today!'}}/>
     </>
   )
 }
