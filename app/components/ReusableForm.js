@@ -69,7 +69,9 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
           "qq.com",
           "sina.com",
           "sohu.com",
-          "foxmail.com"
+          "foxmail.com",
+          "gamil.com",
+          "gemail.com"
         ];
 
         const emailDomain = value.split('@')[1]?.toLowerCase();
