@@ -107,7 +107,20 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
     e.preventDefault();
     setMessage('');
     if (!validate()) return;
+    // 2) Call the email verification API
+      try {
+        const emailValue = formValues.email.trim();
+        const res = await fetch(`/api/verify-email?email=${encodeURIComponent(emailValue)}`);
+        const data = await res.json();
 
+        if (data.status !== 'VALID') {
+          setErrors({ email: 'Email verification failed. Please enter a valid, active email address.' });
+          return; // stop submission
+        }
+      } catch (error) {
+        setErrors({ email: 'Email verification service is unavailable. Please try again later.' });
+        return; // stop submission
+      }
     setLoading(true);
     try {
       // 1) Verify reCAPTCHA via your API route
