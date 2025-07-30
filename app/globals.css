@@ -362,3 +362,7 @@ blockquote ul {
   @apply max-lg:p-5 lg:p-10 rounded-2xl max-w-[1100px] mx-auto mt-10;
   background: linear-gradient(126.89deg, #103743 0%, rgba(29, 40, 56, 0) 100%);
 }
+
+.blog-inside h2 {
+  @apply text-2xl;
+}
