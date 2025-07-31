@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Arkam | Modern Solutions for Modern Financial Services',
     description: 'The last decade has witnessed a leap in financial services marking a shift from rigid traditional systems to digital and agile services.',
     openGraph: {
-      images: '/modern-solutions-for-modern-financial-services.jpg',
+      images: 'https://arkam.com/modern-solutions-for-modern-financial-services.jpg',
     },
 }
 
