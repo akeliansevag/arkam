@@ -5,7 +5,7 @@ import BannerImage from '@/public/img/modern-solutions-for-modern-financial-serv
 export const metadata = {
     title: 'Arkam | Modern Solutions for Modern Financial Services',
     description: 'The last decade has witnessed a leap in financial services marking a shift from rigid traditional systems to digital and agile services.',
-  }
+}
 
 const page = () => {
   return (
