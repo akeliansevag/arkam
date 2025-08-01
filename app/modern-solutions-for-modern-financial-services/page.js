@@ -28,7 +28,7 @@ const page = () => {
           </div>
         </div>
         <div className='py-10'>
-          <h1 className='pb-3 max-lg:text-2xl lg:text-4xl'>Arkam: Modern Solutions for Modern Financial Servies</h1>
+          <h1 className='pb-3 max-lg:text-2xl lg:text-4xl'>Arkam: Modern Solutions for Modern Financial Services</h1>
           <p>
             The last decade has witnessed a leap in financial services marking a shift from rigid traditional systems to digital and agile services. This leap is further pushing banks, FinTech, and telecom providers to adapt and deliver financial services that match the modern lifestyle of modern customers. Only the real challenge isn’t digitization. In 2025, around  2.5 million people remain unbanked and underserved, a staggering number in an era of advancement and technology, and the real pioneers in the industry will be the ones to deliver services that make a difference. At Arkam we believe that access to financial services is a basic right, and we’re on a mission to promote a more connected & accessible financial ecosystem for all. 
           </p>
