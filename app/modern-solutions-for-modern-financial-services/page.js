@@ -23,7 +23,7 @@ const page = () => {
             </div>
             <div className='flex gap-2 items-center'>
               <img src='/img/calendar.svg' width={25}/>
-              <h5 className='text-base'>July 30, 2025</h5>
+              <h5 className='text-base'>August 1, 2025</h5>
             </div>
           </div>
         </div>
