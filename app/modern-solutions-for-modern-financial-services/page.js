@@ -17,13 +17,9 @@ const page = () => {
         <div className='lg:pt-20 max-lg:pt-10'>
           <Image className="w-full" src={BannerImage} alt="Modern Solutions for Modern Financial Services" placeholder="blur" />
           <div className='flex flex-wrap gap-10 mt-3'>
+  
             <div className='flex gap-2 items-center'>
-              <img src='/img/user.svg' width={25}/>
-              <h5 className='text-base'>Arkam</h5>
-            </div>
-            <div className='flex gap-2 items-center'>
-              <img src='/img/calendar.svg' width={25}/>
-              <h5 className='text-base'>August 1, 2025</h5>
+              <h5 className='text-base'>By Arkam - August 1, 2025</h5>
             </div>
           </div>
         </div>
