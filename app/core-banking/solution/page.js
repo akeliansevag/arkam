@@ -56,7 +56,7 @@ const page = () => {
         <Hero title="Solution" />
 
         <IconsTextGridThree title="Solution" items={items} />
-        <CtaContact title="Contact Us" description="Phone: +961 71 871 871</div> <br /> Address: Gefinor Center - Bloc E - Level LG" /> 
+        {/* <CtaContact title="Contact Us" description="Phone: +961 71 871 871</div> <br /> Address: Gefinor Center - Bloc E - Level LG" />  */}
     </>
   )
 }
