@@ -30,7 +30,7 @@ const page = () => {
             />
             </div>
         </div>
-        <CtaContact />
+        {/* <CtaContact /> */}
     </>
   )
 }
