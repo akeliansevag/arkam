@@ -1,4 +1,11 @@
+// /app/api/verify-email/route.js
 import { NextResponse } from 'next/server';
+import NeverBounce from 'neverbounce';
+
+// You should keep your API key in an environment variable for security
+const client = new NeverBounce({
+  apiKey: process.env.NEVERBOUNCE_API_KEY,
+});
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
@@ -12,10 +19,31 @@ export async function GET(request) {
   }
 
   try {
-    const apiRes = await fetch(`https://rapid-email-verifier.fly.dev/api/validate?email=${encodeURIComponent(email)}`);
-    const data = await apiRes.json();
+    // Verify email using NeverBounce
+    const result = await client.single.check(email);
 
-    return NextResponse.json(data);
+    // Example result:
+    // {
+    //   "status": "success",
+    //   "result": "valid",
+    //   "flags": [...],
+    //   "suggested_correction": "",
+    //   "execution_time": 233
+    // }
+
+    let verificationStatus;
+    if (result.result === "valid") {
+      verificationStatus = "VALID";
+    } else if (result.result === "catchall") {
+      verificationStatus = "CATCHALL"; // special category
+    } else {
+      verificationStatus = "INVALID";
+    }
+
+    return NextResponse.json({
+      status: verificationStatus,
+      details: result
+    });
   } catch (error) {
     console.error('Email verification error:', error);
     return NextResponse.json(

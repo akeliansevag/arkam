@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "motion": "^12.7.2",
+    "neverbounce": "^5.0.5",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",

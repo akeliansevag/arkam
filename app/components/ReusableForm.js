@@ -113,7 +113,7 @@ export default function ReusableForm({ apiUrl, fields, recaptchaSiteKey }) {
         const res = await fetch(`/api/verify-email?email=${encodeURIComponent(emailValue)}`);
         const data = await res.json();
 
-        if (data.status !== 'VALID') {
+        if (data.status !== 'VALID' && data.status !== 'CATCHALL'){
           setErrors({ email: 'Email verification failed. Please enter a valid, active email address.' });
           return; // stop submission
         }
