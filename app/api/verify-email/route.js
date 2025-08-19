@@ -32,9 +32,9 @@ export async function GET(request) {
     // }
 
     let verificationStatus;
-    if (result.result === "valid") {
+    if (result.response.result === "valid") {
       verificationStatus = "VALID";
-    } else if (result.result === "catchall") {
+    } else if (result.response.result === "catchall") {
       verificationStatus = "CATCHALL"; // special category
     } else {
       verificationStatus = "INVALID";
