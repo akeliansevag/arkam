@@ -32,12 +32,12 @@ const avenir = localFont({
 
 // ✅ Global metadata (applies to all pages)
 export const metadata = {
-  title: "Arkaaam",
+  title: "Arkaam",
   description: "",
   openGraph: {
     title: "Arkaam",
     description: "",
-    url: "https://arkaaam.com",
+    url: "https://arkam.com",
     siteName: "Arkaam",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arkam",
+    title: "Arkaam",
     description: "",
     images: ["https://arkam.com/img/og-image.png"],
   },
@@ -74,6 +74,7 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html lang="en" className={`${inter.variable} ${avenir.variable}`}>
+      {/* <title>Arkam</title> */}
       <body>
         {
           loading ? <SplashScreen /> : (

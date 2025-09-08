@@ -75,7 +75,7 @@ const Home = () => {
     <div>
       
       
-      <Hero title="Build Your Digital Bank like never before" subtitle="Arkam is your trusted partner in financial empowerment" description="Whether it’s Core Banking, Digital Wallets and Products, or Consulting, we offer you innovative solutions that elevate your business and position you at the center of the fintech map." cta={{link: '/contact-us', text:"Let's Connect"}}/>
+      <Hero title="Build Your Digital Bank like never before" subtitle="Arkaam is your trusted partner in financial empowerment" description="Whether it’s Core Banking, Digital Wallets and Products, or Consulting, we offer you innovative solutions that elevate your business and position you at the center of the fintech map." cta={{link: '/contact-us', text:"Let's Connect"}}/>
       
       <section>
         <div className="container">
