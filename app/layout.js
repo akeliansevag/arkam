@@ -30,6 +30,32 @@ const avenir = localFont({
   variable: '--font-avenir',
 });
 
+// ✅ Global metadata (applies to all pages)
+export const metadata = {
+  title: "Arkam",
+  description: "",
+  openGraph: {
+    title: "Arkam",
+    description: "",
+    url: "https://arkam.com",
+    siteName: "Arkam",
+    images: [
+      {
+        url: "https://arkam.com/img/og-image.png", // must be absolute
+        width: 1200,
+        height: 630,
+        alt: "Arkam Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arkam",
+    description: "",
+    images: ["https://arkam.com/img/og-image.png"],
+  },
+};
 
 export default function RootLayout({ children }) {
   // const [loading, setLoading] = useState(true);
@@ -48,7 +74,6 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html lang="en" className={`${inter.variable} ${avenir.variable}`}>
-      <title>Arkam</title>
       <body>
         {
           loading ? <SplashScreen /> : (
