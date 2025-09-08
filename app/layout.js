@@ -32,13 +32,13 @@ const avenir = localFont({
 
 // ✅ Global metadata (applies to all pages)
 export const metadata = {
-  title: "Arkaam",
+  title: "Arkam",
   description: "",
   openGraph: {
-    title: "Arkaam",
+    title: "Arkam",
     description: "",
     url: "https://arkam.com",
-    siteName: "Arkaam",
+    siteName: "Arkam",
     images: [
       {
         url: "https://arkam.com/img/og-image.png", // must be absolute
@@ -51,7 +51,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arkaam",
+    title: "Arkam",
     description: "",
     images: ["https://arkam.com/img/og-image.png"],
   },
