@@ -35,10 +35,10 @@ export const metadata = {
   title: "Arkaaam",
   description: "",
   openGraph: {
-    title: "Arkam",
+    title: "Arkaam",
     description: "",
     url: "https://arkaaam.com",
-    siteName: "Arkam",
+    siteName: "Arkaam",
     images: [
       {
         url: "https://arkam.com/img/og-image.png", // must be absolute
