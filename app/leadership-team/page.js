@@ -28,6 +28,11 @@ const page = () => {
     },
     {
         icon: '/img/person.svg',
+        title: 'Armand Magharian',
+        description: 'Chief Sales Officer',
+    },
+    {
+        icon: '/img/person.svg',
         title: 'Rabih Sassine',
     },
     {
