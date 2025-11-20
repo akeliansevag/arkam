@@ -34,7 +34,8 @@ const page = () => {
 
   return (
     <>
-        <Hero title="Join Our Team" description="Arkam is on the lookout for talented individuals who share our passion for fintech and are eager to make an impact." />
+        <JobOpenings />
+        {/* <Hero title="Join Our Team" description="Arkam is on the lookout for talented individuals who share our passion for fintech and are eager to make an impact." /> */}
         
         <section className='bg-gray'>
             <div className='container'>
@@ -54,7 +55,7 @@ const page = () => {
                 </div>
             </div>
         </section>
-        <JobOpenings />
+        
     </>
   )
 }

@@ -31,9 +31,9 @@ const Hero = ({title,subtitle,description,subsubtitle,cta,hideShape}) => {
                 }
             </div>
             {
-              !hideShape && (
-                <Shapes />   
-              )
+              // !hideShape && (
+              //   <Shapes />   
+              // )
             }
                  
         </div>

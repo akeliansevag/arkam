@@ -43,8 +43,9 @@ const page = () => {
 
   return (
     <>
-        <Hero title="Leadership Team" description="At Arkam, our success is driven by a pivotal team of industry experts dedicated to transforming the financial landscape. Each member of our team brings a unique perspective and a proven track record in their respective fields, allowing us to provide unparalleled insights into the challenges and opportunities faced by businesses today." />
-        
+        {/* <Hero title="Leadership Team" description="At Arkam, our success is driven by a pivotal team of industry experts dedicated to transforming the financial landscape. Each member of our team brings a unique perspective and a proven track record in their respective fields, allowing us to provide unparalleled insights into the challenges and opportunities faced by businesses today." /> */}
+        <IconsTextGridFour description="At Arkam, our success is driven by a pivotal team of industry experts dedicated to transforming the financial landscape. Each member of our team brings a unique perspective and a proven track record in their respective fields, allowing us to provide unparalleled insights into the challenges and opportunities faced by businesses today. " title="The People Making All the Difference" items={TransformStream}/>
+       
         <section className='bg-gray'>
             <div className='container'>
                 <div className='flex gap-8 max-lg:flex-col items-center justify-between'>
@@ -64,7 +65,7 @@ const page = () => {
             </div>
         </section>
 
-        <IconsTextGridFour title="The People Making All the Difference" items={TransformStream}/>
+        
     
     </>
   )
