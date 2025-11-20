@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import { fadeInUp } from '../config/animations';
 import IconsTextGridFour from '../components/IconsTextGridFour';
 import IconsTextBlock from '../components/IconsTextBlock';
+import JobOpenings from '../components/JobOpenings';
 
 
 export const metadata = {
@@ -52,7 +53,8 @@ const page = () => {
                     
                 </div>
             </div>
-        </section>    
+        </section>
+        <JobOpenings />
     </>
   )
 }
