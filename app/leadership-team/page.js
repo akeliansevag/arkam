@@ -21,10 +21,12 @@ const page = () => {
     {
         icon: '/img/person.svg',
         title: 'Assaad Khoury',
+        description: 'Software Development Director'
     },
     {
         icon: '/img/person.svg',
         title: 'Shirine Mroueh',
+        description: 'Product and Customer Relations Director'
     },
     {
         icon: '/img/person.svg',
@@ -34,10 +36,12 @@ const page = () => {
     {
         icon: '/img/person.svg',
         title: 'Rabih Sassine',
+        description: 'Software Development Manager – Core Banking',
     },
     {
         icon: '/img/person.svg',
         title: 'Elias Kahwaji',
+        description: 'Software Development Manager – Digital Banking',
     },
   ];
 
