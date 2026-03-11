@@ -30,7 +30,7 @@ const Mobiles = () => {
                     transition={{ duration: 0.2, delay: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     className='w-1/2'
-                    src='/img/mobile-one.webp'
+                    src='/img/mobile-one-1.webp'
                     alt="Mobile One"
                   />
                   <motion.img
