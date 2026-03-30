@@ -11,7 +11,7 @@
   "dependencies": {
     "motion": "^12.7.2",
     "neverbounce": "^5.0.5",
-    "next": "15.3.0",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
