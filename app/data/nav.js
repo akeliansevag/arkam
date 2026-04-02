@@ -101,7 +101,7 @@ export const mainMenu = [
       title: 'Company',
       children: [
         { title: 'About Arkam', href: '/about-arkam' },
-        { title: 'Leadership Team', href: '/leadership-team' },
+        // { title: 'Leadership Team', href: '/leadership-team' },
         { title: 'Careers', href: '/careers' },
         // { title: 'Success Stories', href: '/success-stories' },
         { title: 'Partner With Us', href: '/partner-with-us' },

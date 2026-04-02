@@ -37,7 +37,7 @@ const Footer = () => {
                 <h5>Arkam</h5>
                 <ul className='footer-menu'>
                   <li><Link href="/about-arkam">About us</Link></li>
-                  <li><Link href="/leadership-team">Leadership Team</Link></li>
+                  {/* <li><Link href="/leadership-team">Leadership Team</Link></li> */}
                   <li><Link href="/contact-us">Contact Us</Link></li>
                 </ul>
             </motion.div>
